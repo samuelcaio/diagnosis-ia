@@ -1,0 +1,3291 @@
+[
+  {
+    "identification": "bbd0c09b-37e9-452b-bf4b-15d6de9eed6b",
+    "id": "hipertensao",
+    "name": "Hipertensão Arterial Sistêmica (HAS)",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I10",
+    "minScore": 40,
+    "symptoms": {
+      "CEFALEIA": 25,
+      "TONTURA": 20,
+      "VISAO_TURVA": 20,
+      "ZUMBIDO": 15
+    },
+    "vitalCriteria": {
+      "systolicBPMin": 140.0,
+      "diastolicBPMin": 90.0
+    },
+    "conduct": "Orientar restrição de sódio e atividade física regular. Solicitar exames de rotina (Creatinina, Potássio, ECG, Urina tipo I). Iniciar tratamento farmacológico conforme estágio (IECA, BRA, Diurético ou Bloqueador de Canal de Cálcio). Retorno em 15 dias para reavaliação pressórica.",
+    "exams": [
+      "Eletrocardiograma (ECG)",
+      "Dosagem de Creatinina Sérica",
+      "Dosagem de Potássio",
+      "Urina Tipo I (EAS)"
+    ],
+    "contraindications": [
+      "Anti-inflamatórios Não Esteroidais (AINEs - elevam PA)",
+      "Descongestionantes Nasais Sistêmicos"
+    ]
+  },
+  {
+    "identification": "df26bb07-2ef9-42f7-a356-00c833c62aa1",
+    "id": "diabetes_tipo2",
+    "name": "Diabetes Mellitus Tipo 2 (DM2)",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E11",
+    "minScore": 40,
+    "symptoms": {
+      "POLIURIA": 30,
+      "POLIDIPSIA": 30,
+      "PERDA_PESO": 20,
+      "FADIGA": 10,
+      "POLIFAGIA": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar Metformina 500mg a 1000mg/dia conforme tolerância gastrointestinal. Orientar dieta hipoglicídica e encaminhar ao grupo de Hiperdia/Nutrição. Solicitar rastreamento de complicações (Exame dos pés, Fundo de olho, Microalbuminúria).",
+    "exams": [
+      "Hemoglobina Glicada (HbA1c)",
+      "Glicemia de Jejum",
+      "Microalbuminúria de 24h",
+      "Perfil Lipídico"
+    ],
+    "contraindications": [
+      "Corticosteroides sistêmicos (causam hiperglicemia grave)"
+    ]
+  },
+  {
+    "identification": "98724c69-a033-4a3f-b177-a5e73b082490",
+    "id": "pre_diabetes",
+    "name": "Pré-Diabetes",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "R73.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 20,
+      "SOBREPESO": 30,
+      "ACANTOSE_NIGRICA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Enfatizar mudança drástica de estilo de vida (perda de 5% a 7% do peso corporal, 150 min de exercícios semanais). Considerar introdução de Metformina em pacientes de alto risco (IMC > 35 ou histórico de diabetes gestacional).",
+    "exams": [
+      "Glicemia de Jejum",
+      "Hemoglobina Glicada (HbA1c)",
+      "Teste Oral de Tolerância à Glicose (TOTG)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "42fb7f2a-24c4-4f47-8fa3-8833e60bdaab",
+    "id": "obesidade",
+    "name": "Obesidade Clínico-Metabólica",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E66",
+    "minScore": 30,
+    "symptoms": {
+      "SOBREPESO": 50,
+      "FADIGA": 20,
+      "APNEIA_SONO": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Mudança terapêutica de estilo de vida combinando dieta hipocalórica e exercícios. Rastrear Síndrome Metabólica. Se falha terapêutica em 6 meses com IMC > 30 (ou > 27 com comorbidades), considerar terapia farmacológica adjuvante.",
+    "exams": [
+      "Perfil Lipídico Completo",
+      "TSH e T4 Livre",
+      "Glicemia de Jejum",
+      "Transaminases (ALT/AST)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9c000dcd-988d-490c-8956-6ffdbd72907d",
+    "id": "sobrepeso",
+    "name": "Sobrepeso Clínico",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E66.3",
+    "minScore": 30,
+    "symptoms": {
+      "SOBREPESO": 70,
+      "FADIGA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Orientação nutricional para redução de calorias vazias, aumento de fibras e atividade física de moderada intensidade. Acompanhamento semestral de peso corporal e vitais.",
+    "exams": [
+      "Glicemia de Jejum",
+      "Perfil Lipídico Completo"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "208ac0de-0a76-43ab-94df-fc453e6ac456",
+    "id": "dislipidemia",
+    "name": "Dislipidemia (Colesterol Alto)",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E78.5",
+    "minScore": 30,
+    "symptoms": {
+      "SOBREPESO": 40,
+      "XANTELASMA": 40,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Instituir dieta pobre em gorduras saturadas e gordura trans. Se risco cardiovascular moderado/alto ou falha de dieta em 3 meses, iniciar Estatina (Sinvastatina 20mg-40mg ou Atorvastatina 10mg-20mg à noite).",
+    "exams": [
+      "Colesterol Total",
+      "Colesterol HDL/LDL",
+      "Triglicerídeos Séricos",
+      "TGP/ALT (antes de estatina)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "8d7174d6-d9e2-41d2-a6ff-6a0c1caac2ac",
+    "id": "sindrome_metabolica",
+    "name": "Síndrome Metabólica",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E88.81",
+    "minScore": 35,
+    "symptoms": {
+      "SOBREPESO": 40,
+      "CEFALEIA": 20,
+      "TONTURA": 20,
+      "ACANTOSE_NIGRICA": 20
+    },
+    "vitalCriteria": {
+      "systolicBPMin": 130.0,
+      "diastolicBPMin": 85.0
+    },
+    "conduct": "Abordagem multiprofissional. Redução de peso (meta de 10%). Tratamento agressivo dos fatores componentes (Hipertensão, DM2 e Dislipidemia). Estimular caminhadas diárias.",
+    "exams": [
+      "Perfil Lipídico Completo",
+      "Glicemia de Jejum",
+      "Ácido Úrico Sérico"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "de0b3c81-2b55-4b7a-b880-ea03d8a5ea0d",
+    "id": "hipotireoidismo",
+    "name": "Hipotireoidismo Clínico",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E03.9",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 30,
+      "PERDA_APETITE": 15,
+      "PERDA_PESO": -20,
+      "SOBREPESO": 20,
+      "TRISTEZA_PERSISTENTE": 20,
+      "PELE_SECA": 20,
+      "CONSTIPACAO": 15
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Levotiroxina Sódica em jejum (dose inicial de 1,6 mcg/kg/dia para jovens ou 25-50 mcg/dia para idosos/cardiopatas). Dosar TSH em 6 a 8 semanas para ajuste terapêutico.",
+    "exams": [
+      "TSH (Hormônio Estimulante da Tireoide)",
+      "T4 Livre",
+      "Hemograma Completo"
+    ],
+    "contraindications": [
+      "Uso concomitante com Carbonato de Cálcio ou Sulfato Ferroso (reduzem absorção da Levotiroxina)"
+    ]
+  },
+  {
+    "identification": "a39ca686-ae15-4f87-887b-e62260c9dc8c",
+    "id": "hipertireoidismo",
+    "name": "Hipertireoidismo Clínico",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E05.9",
+    "minScore": 35,
+    "symptoms": {
+      "PERDA_PESO": 35,
+      "PALPITACOES": 25,
+      "INSÔNIA": 20,
+      "TREMORES": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar Metimazol 10mg a 40mg/dia ou Propiltiuracil. Adicionar Propranolol 20mg a 40mg de 8/8h para controle de sintomas adrenérgicos (palpitações/tremores). Encaminhar ao endocrinologista.",
+    "exams": [
+      "TSH Sérico",
+      "T4 Livre",
+      "Hemograma (risco de agranulocitose por tionamidas)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "eb7ee6d3-12a0-4d9e-a179-2e0a9ba24a35",
+    "id": "anemia_ferropriva",
+    "name": "Anemia Ferropriva na APS",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "D50.9",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 40,
+      "TONTURA": 20,
+      "VISAO_TURVA": 15,
+      "PALPITACOES": 15,
+      "PELE_PÁLIDA": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Sulfato Ferroso 200mg a 400mg/dia (equivalente a 40-80mg de ferro elementar) 1 hora antes das refeições com suco cítrico. Orientar dieta rica em ferro. Repetir exames em 30 dias.",
+    "exams": [
+      "Hemograma Completo",
+      "Ferritina Sérica",
+      "Ferro Sérico",
+      "Capacidade Total de Ligação do Ferro"
+    ],
+    "contraindications": [
+      "Antiácidos e Protetores Gástricos (bloqueiam absorção do ferro)"
+    ]
+  },
+  {
+    "identification": "b14cebb3-70d4-436e-a76c-1fa43d474862",
+    "id": "deficiencia_vit_b12",
+    "name": "Deficiência de Vitamina B12",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E53.8",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 30,
+      "FORMIGAMENTO": 40,
+      "TRISTEZA_PERSISTENTE": 20,
+      "DÉFICIT_COGNITIVO": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Cianocobalamina 1000mcg IM semanal por 4 semanas, seguido de mensal. Em casos leves de má absorção não perniciosa, prescrever Cobalamina oral 1000-2000mcg/dia.",
+    "exams": [
+      "Dosagem de Vitamina B12 Sérica",
+      "Hemograma Completo (pesquisa de macrocitose)",
+      "Ácido Fólico Sérico"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "694867e3-f56a-4598-bb1c-fa08e28c74f8",
+    "id": "deficiencia_vit_d",
+    "name": "Deficiência de Vitamina D",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "E55.9",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 45,
+      "TENSAO_MUSCULAR": 25,
+      "DOR_ARTICULAR": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Colecalciferol (Vitamina D3) 50.000 UI por semana por 8 semanas na fase de ataque. Manutenção com 1.000 a 2.000 UI/dia. Estimular exposição solar consciente.",
+    "exams": [
+      "Dosagem de 25-Hidroxivitamina D [25(OH)D]",
+      "Cálcio Sérico",
+      "Fósforo Sérico"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "bd7df2ec-6acf-415c-883b-945fdf1c00e7",
+    "id": "osteoporose",
+    "name": "Osteoporose Senil / Pós-Menopausa",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "M81.0",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_LOMBAR": 40,
+      "QUEDAS": 40,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar Alendronato de Sódio 70mg oral uma vez por semana (tomar em jejum com água filtrada e manter-se em pé por 30 min). Associar Carbonato de Cálcio 500mg + Vitamina D3 400 UI.",
+    "exams": [
+      "Densitometria Óssea (Coluna e Fêmur)",
+      "Cálcio Urinário de 24h",
+      "Cálcio Sérico e TSH"
+    ],
+    "contraindications": [
+      "Esofagite ativa",
+      "Hérnia de hiato volumosa",
+      "Incapacidade de permanecer ereto por 30 minutos"
+    ]
+  },
+  {
+    "identification": "1cfea456-723c-45b7-9b0b-835607202fcc",
+    "id": "dengue",
+    "name": "Dengue (Suspeita de Arbovirose)",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "A90",
+    "minScore": 35,
+    "symptoms": {
+      "FEBRE": 30,
+      "MYALGIA": 25,
+      "CEFALEIA": 20,
+      "RETRO_ORBITAL_PAIN": 25
+    },
+    "vitalCriteria": {
+      "temperatureMin": 37.8
+    },
+    "conduct": "Iniciar hidratação oral vigorosa (60ml/kg/dia). Prescrever estritamente Dipirona ou Paracetamol para controle de febre/dor. PROIBIDO AINEs e AAS. Solicitar Hemograma completo para monitorar plaquetas.",
+    "exams": [
+      "Hemograma Completo",
+      "Pesquisa de Antígeno NS1",
+      "Sorologia IgM/IgG"
+    ],
+    "contraindications": [
+      "AAS (Aspirina)",
+      "Ibuprofeno",
+      "Nimesulida",
+      "Diclofenaco",
+      "Cetoprofeno",
+      "AINEs em geral"
+    ]
+  },
+  {
+    "identification": "0938e95b-5ec6-47c6-b47f-81e74f5c9039",
+    "id": "chikungunya",
+    "name": "Febre Chikungunya (Fase Aguda)",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "A92.0",
+    "minScore": 35,
+    "symptoms": {
+      "FEBRE": 25,
+      "DOR_ARTICULAR": 40,
+      "MYALGIA": 15,
+      "RASH": 20
+    },
+    "vitalCriteria": {
+      "temperatureMin": 37.8
+    },
+    "conduct": "Tratamento de suporte sintomático: hidratação oral abundante e repouso. Analgesia com Dipirona ou Paracetamol. Evitar AINEs nas primeiras 48 horas devido ao risco de Dengue associado.",
+    "exams": [
+      "Sorologia Elisa IgM para Chikungunya",
+      "RT-PCR",
+      "Hemograma"
+    ],
+    "contraindications": [
+      "AAS",
+      "Ibuprofeno e AINEs nas primeiras 48 horas da febre"
+    ]
+  },
+  {
+    "identification": "a3005cfd-9387-491f-bcf3-865de0ab51ce",
+    "id": "zika",
+    "name": "Zika Vírus (Quadro Clássico)",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "A92.8",
+    "minScore": 30,
+    "symptoms": {
+      "FEBRE": 15,
+      "RASH": 40,
+      "CONJUNTIVITE": 25,
+      "DOR_ARTICULAR": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Repouso e hidratação oral. Antihistamínicos se o prurido cutâneo for intenso. Em gestantes, acompanhamento ultrassonográfico rigoroso devido ao risco de microcefalia fetal.",
+    "exams": [
+      "RT-PCR para Zika (Sangue/Urina)",
+      "Sorologia IgM",
+      "Ultrassonografia obstétrica (se gestante)"
+    ],
+    "contraindications": [
+      "AAS",
+      "Anti-inflamatórios Não Esteroidais (AINEs) até exclusão de Dengue"
+    ]
+  },
+  {
+    "identification": "6385e241-fb7e-4925-a155-52ecee038dc7",
+    "id": "influenza",
+    "name": "Síndrome Gripal (Influenza / Gripe)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J11",
+    "minScore": 35,
+    "symptoms": {
+      "FEBRE": 25,
+      "TOSSE": 25,
+      "DOR_GARGANTA": 20,
+      "MYALGIA": 15,
+      "CORIZA": 15
+    },
+    "vitalCriteria": {
+      "temperatureMin": 37.8
+    },
+    "conduct": "Repouso, hidratação abundante. Em pacientes de alto risco (idosos, pneumopatas, gestantes) ou com dispneia, iniciar Fosfato de Oseltamivir (Tamiflu) 75mg de 12/12h por 5 dias.",
+    "exams": [
+      "Painel Viral Rápido Nasal (Influenza A/B)",
+      "Pesquisa de Antígeno para Influenza"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c79c2c4c-3559-45b2-89f8-901a9f4d451b",
+    "id": "covid19",
+    "name": "Infecção por COVID-19 (SARS-CoV-2)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "U07.1",
+    "minScore": 35,
+    "symptoms": {
+      "FEBRE": 20,
+      "TOSSE": 25,
+      "FADIGA": 15,
+      "PERDA_OLFATO": 30,
+      "DOR_GARGANTA": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Isolamento por 7 dias. Monitorar saturação em casa. Dipirona para dor/febre. Encaminhar para pronto-atendimento se houver saturação < 94% em ar ambiente ou falta de ar grave.",
+    "exams": [
+      "Teste Rápido de Antígeno (Nasofaringe)",
+      "RT-PCR para SARS-CoV-2"
+    ],
+    "contraindications": [
+      "Corticosteroides inalatórios ou sistêmicos em fase precoce sem hipoxemia"
+    ]
+  },
+  {
+    "identification": "eab2e58f-5210-4e4e-bc6b-50a38114b0d3",
+    "id": "tuberculose",
+    "name": "Tuberculose Pulmonar Ativa",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "A15",
+    "minScore": 40,
+    "symptoms": {
+      "TOSSE": 40,
+      "FEBRE": 20,
+      "PERDA_PESO": 20,
+      "SUDORESE_NOTURNA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Notificação compulsória. Iniciar esquema básico de tratamento de 6 meses (Rifampicina, Isoniazida, Pirazinamida e Etambutol - RIPE por 2 meses, seguido de RI por 4 meses). Monitorar função hepática.",
+    "exams": [
+      "Baciloscopia de Escarro (BAAR)",
+      "Teste Rápido Molecular para Tuberculose (TRM-TB)",
+      "Radiografia de Tórax"
+    ],
+    "contraindications": [
+      "Bebidas alcoólicas (alto risco de hepatotoxicidade por rifampicina/isoniazida)"
+    ]
+  },
+  {
+    "identification": "4acdecd7-4ac2-4b63-8064-27c81c4a893d",
+    "id": "sifilis",
+    "name": "Sífilis (Adquirida / Primária / Secundária)",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "A51",
+    "minScore": 35,
+    "symptoms": {
+      "LESÃO_GENITAL": 45,
+      "RASH": 35,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Penicilina G Benzatina (Benzetacil) 2,4 milhões UI IM dose única (para sífilis primária) ou semanal por 3 semanas (sífilis latente/tardia). Tratar parceiro. Notificar.",
+    "exams": [
+      "VDRL (Teste Não Treponêmico)",
+      "Teste Rápido Treponêmico para Sífilis",
+      "Exame em campo escuro da lesão"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "531f90b0-41e7-4816-89c7-673bd2b718f0",
+    "id": "hiv_aids",
+    "name": "Acompanhamento de HIV/Aids",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "Z21",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 30,
+      "PERDA_PESO": 30,
+      "FEBRE": 20,
+      "CANDIDÍASE_ORAL": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar Terapia Antirretroviral (TARV) com esquema triplo de primeira linha (Tenofovir + Lamivudina + Dolutegravir - TLD). Rastrear coinfecções (TB, Hepatites). Promover adesão e aconselhamento.",
+    "exams": [
+      "Carga Viral do HIV",
+      "Contagem de Linfócitos CD4",
+      "Sorologias para Hepatites B/C",
+      "VDRL"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "1a07bf8e-50e8-4131-85f4-dacdf1802fa9",
+    "id": "hepatite_b",
+    "name": "Acompanhamento de Hepatite B Crônica",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "B18.1",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 40,
+      "NAUSEAS": 30,
+      "ICTERÍCIA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Avaliar necessidade de tratamento com Tenofovir ou Entecavir conforme critérios de replicação viral e lesão hepática (ALT elevada ou fibrose). Vacinar contatos sexuais e domiciliares.",
+    "exams": [
+      "Sorologia HBsAg",
+      "HBeAg / Anti-HBe",
+      "Dosagem de Carga Viral HBV-DNA",
+      "Transaminases (AST/ALT)"
+    ],
+    "contraindications": [
+      "Uso abusivo de álcool e medicamentos hepatotóxicos"
+    ]
+  },
+  {
+    "identification": "e451ec12-95f3-4b0d-81bb-581654e3c201",
+    "id": "hepatite_c",
+    "name": "Acompanhamento de Hepatite C",
+    "specialty": "Infecciosas / Tropicais",
+    "bodySystem": "Infecciosas / Tropicais",
+    "cid": "B18.2",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 50,
+      "NAUSEAS": 25,
+      "ICTERÍCIA": 25
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever tratamento curativo de curta duração com Antirretrovirais de Ação Direta (Sofosbuvir + Velpatasvir por 12 semanas). Rastrear cirrose e carcinoma hepatocelular.",
+    "exams": [
+      "Anti-HCV",
+      "Pesquisa Qualitativa/Quantitativa de HCV-RNA",
+      "Genotipagem do HCV",
+      "Elastografia Hepática"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "fea615d1-60a2-41b7-9045-d8b52d179b40",
+    "id": "resfriado_comum",
+    "name": "Resfriado Comum (Rinofaringite Aguda)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J00",
+    "minScore": 30,
+    "symptoms": {
+      "CORIZA": 30,
+      "ESPIRROS": 30,
+      "OBSTRUCAO_NASAL": 20,
+      "DOR_GARGANTA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Tratamento estritamente sintomático. Lavagem nasal abundante com soro fisiológico 0,9%. Ofertar líquidos e repouso. Evitar uso desnecessário de antibióticos ou anti-histamínicos.",
+    "exams": [
+      "Avaliação clínica simples (sem exames complementares necessários)"
+    ],
+    "contraindications": [
+      "Antibióticos (infecção estritamente viral)",
+      "Corticosteroides sistêmicos"
+    ]
+  },
+  {
+    "identification": "036b604b-9fc0-4176-a5f7-40be8ebfb565",
+    "id": "faringite_aguda",
+    "name": "Faringite Aguda Eritematosa ou Estreptocócica",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J02.9",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_GARGANTA": 45,
+      "FEBRE": 25,
+      "CEFALEIA": 15,
+      "EXPECTORACAO": 15
+    },
+    "vitalCriteria": {},
+    "conduct": "Aplicar escore de Centor. Se suspeita estreptocócica (presença de exsudato amigdaliano, linfonodos cervicais dolorosos, febre e ausência de tosse): prescrever Penicilina G Benzatina 1,2 milhão UI IM dose única ou Amoxicilina 500mg de 8/8h por 10 dias.",
+    "exams": [
+      "Teste Rápido para Estreptococo do Grupo A (Se disponível)",
+      "Cultura de Swab Amigdaliano (Reservado para refratários)"
+    ],
+    "contraindications": [
+      "Antibióticos em faringite puramente viral (ausência de febre/exsudato)"
+    ]
+  },
+  {
+    "identification": "56779ce7-2e86-4725-9560-a70c820fb108",
+    "id": "rinite_alergica",
+    "name": "Rinite Alérgica Exacerbada",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J30.9",
+    "minScore": 35,
+    "symptoms": {
+      "ESPIRROS": 35,
+      "CORIZA": 25,
+      "OBSTRUCAO_NASAL": 20,
+      "PRURIDO_NASAL": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Controle ambiental de poeira e ácaros. Iniciar Corticoide Inalatório Nasal (Fluticasona ou Budesonida spray 1 a 2 jatos/dia). Adicionar Anti-histamínico oral de 2ª geração (Loratadina 10mg/dia ou Fexofenadina).",
+    "exams": [
+      "Teste de Prick para Alérgenos (Se disponível)",
+      "Dosagem de IgE Total Sérica"
+    ],
+    "contraindications": [
+      "Descongestionantes nasais tópicos por mais de 5 dias seguidos (risco de rinite medicamentosa)"
+    ]
+  },
+  {
+    "identification": "9f46401c-6653-4b08-be92-bd4a574ae7d9",
+    "id": "asma",
+    "name": "Asma Brônquica em Crise Exacerbada",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J45",
+    "minScore": 40,
+    "symptoms": {
+      "DISPNEIA": 30,
+      "CHADO_PEITO": 30,
+      "TOSSE": 20,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {
+      "saturationMax": 93.9
+    },
+    "conduct": "Oxigenoterapia se saturação < 94% (alvo: 93-95%). Administrar Salbutamol spray (4 a 10 jatos com espaçador) de 20/20 min na primeira hora. Associar Corticoide Sistêmico por via oral (Prednisolona 40mg) por 5 dias.",
+    "exams": [
+      "Espirometria com Prova Broncodilatadora (Fora da crise)",
+      "Radiografia de Tórax (Excluir pneumonia/pneumotórax)",
+      "Gasometria Arterial (Se saturação crítica < 90%)"
+    ],
+    "contraindications": [
+      "Betabloqueadores não seletivos (ex: Propranolol - causam broncoespasmo grave)"
+    ]
+  },
+  {
+    "identification": "635bf59a-69fc-4c4d-9ba1-96d11c00012e",
+    "id": "bronquite_aguda",
+    "name": "Bronquite Aguda Inespecífica",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J20.9",
+    "minScore": 35,
+    "symptoms": {
+      "TOSSE": 45,
+      "EXPECTORACAO": 25,
+      "FEBRE": 15,
+      "CHADO_PEITO": 15
+    },
+    "vitalCriteria": {},
+    "conduct": "Sintomáticos e hidratação. A tosse pode persistir por até 3 semanas. Inaloterapia simples. Evitar o uso de antibióticos, pois >90% dos casos são de origem viral.",
+    "exams": [
+      "Radiografia de Tórax (Apenas se suspeita de pneumonia associada)"
+    ],
+    "contraindications": [
+      "Antibióticos na rotina inicial sem sinais de pneumonia"
+    ]
+  },
+  {
+    "identification": "c3d31b98-690a-4fb8-ac24-d42ba5c93d0d",
+    "id": "sinusite",
+    "name": "Sinusite Aguda (Rinossinusite bacteriana/viral)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J32.9",
+    "minScore": 35,
+    "symptoms": {
+      "OBSTRUCAO_NASAL": 30,
+      "CEFALEIA": 30,
+      "CORIZA": 20,
+      "FEBRE": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Lavagem nasal vigorosa com Soro Fisiológico. Corticoide nasal spray. Se sintomas persistirem por >10 dias, ou apresentarem piora de 'dupla curva' (febre alta após melhora inicial): prescrever Amoxicilina 500mg de 8/8h por 7 dias.",
+    "exams": [
+      "Avaliação clínica e facial",
+      "Radiografia de Seios da Face (Não recomendado de rotina na APS)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "01c307fb-552b-4c90-b121-48e482dff12b",
+    "id": "pneumonia",
+    "name": "Pneumonia Adquirida na Comunidade (PAC)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J18",
+    "minScore": 40,
+    "symptoms": {
+      "FEBRE": 20,
+      "TOSSE": 25,
+      "DISPNEIA": 25,
+      "DOR_TORACICA": 20,
+      "EXPECTORACAO": 10
+    },
+    "vitalCriteria": {
+      "temperatureMin": 37.8
+    },
+    "conduct": "Avaliar gravidade pelo escore CURB-65. Se elegível para tratamento ambulatorial: prescrever Amoxicilina 500mg de 8/8h (ou associada a Clavulanato) por 7 dias. Retorno para reavaliação em 48h ou imediatamente se piora da falta de ar.",
+    "exams": [
+      "Radiografia de Tórax (Padrão ouro)",
+      "Hemograma Completo",
+      "Dosagem de Proteína C Reativa (PCR)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "6443ec9c-dfb1-40c5-b983-90a44f848371",
+    "id": "dpoc",
+    "name": "Doença Pulmonar Obstrutiva Crônica (DPOC) Exacerbada",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "J44.9",
+    "minScore": 40,
+    "symptoms": {
+      "DISPNEIA": 35,
+      "TOSSE": 25,
+      "EXPECTORACAO": 20,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {
+      "saturationMax": 92.0
+    },
+    "conduct": "Broncodilatadores inalatórios de curta ação. Corticoide oral por 5 dias. Antibioticoterapia (Amoxicilina-Clavulanato) se houver aumento de escarro, purulência e falta de ar (critérios de Anthonisen). Alvo de oxigenoterapia menor: 88-92%.",
+    "exams": [
+      "Espirometria diagnóstica",
+      "Radiografia de Tórax",
+      "Gasometria Arterial"
+    ],
+    "contraindications": [
+      "Oxigênio em fluxo excessivo (> 93% de saturação - risco de acidose respiratória hipercápnica)"
+    ]
+  },
+  {
+    "identification": "81b85a93-d9da-46b2-8176-1c968a340fdd",
+    "id": "gastroenterite_aguda",
+    "name": "Gastroenterite Aguda Infecciosa",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "A09",
+    "minScore": 35,
+    "symptoms": {
+      "DIARREIA": 40,
+      "NAUSEAS": 30,
+      "FEBRE": 20,
+      "CÓLICA": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Prevenir desidratação (Soro de Reidratação Oral após evacuações líquidas). Prescrever analgésicos e antieméticos simples. Evitar o uso de antibióticos na rotina. Sintomáticos simples.",
+    "exams": [
+      "Exame de fezes (Parasitológico/Coprocultura se persistência por > 7 dias)"
+    ],
+    "contraindications": [
+      "Loperamida (Imosec - contraindicado devido ao risco de megacólon tóxico por retenção bacteriana)"
+    ]
+  },
+  {
+    "identification": "d63652b0-bc9a-4f5c-943e-ac6cc2a5cb08",
+    "id": "constipacao",
+    "name": "Constipação Intestinal Funcional",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "K59.0",
+    "minScore": 30,
+    "symptoms": {
+      "CONSTIPACAO": 60,
+      "CÓLICA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Orientar dieta rica em fibras (25-30g/dia), aumento de ingestão hídrica (2L/dia) e incentivar atividade física. Se necessário, prescrever laxantes osmóticos (Lactulose 10-20ml/dia ou Polietilenoglicol - PEG).",
+    "exams": [
+      "Avaliação clínica e palpação de abdômen",
+      "Radiografia simples de abdômen (Se suspeita de fecaloma)"
+    ],
+    "contraindications": [
+      "Laxantes estimulantes de forma crônica (ex: Sene, Almeida Prado - causam dependência de motilidade)"
+    ]
+  },
+  {
+    "identification": "d4d97be7-e6ba-48e7-9c43-53ab01fb6c56",
+    "id": "diarreia_infecciosa",
+    "name": "Diarreia Infecciosa com Sinais de Invasão (Disenteria)",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "A09.0",
+    "minScore": 35,
+    "symptoms": {
+      "DIARREIA": 45,
+      "FEBRE": 25,
+      "CÓLICA": 20,
+      "MELENA": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Reidratação oral ou venosa vigorosa. Se disenteria com febre alta e fezes com sangue/muco: iniciar Ciprofloxacino 500mg de 12/12h por 3 dias. Rastrear desidratação.",
+    "exams": [
+      "Coprocultura com Antibiograma",
+      "Pesquisa de Leucócitos nas Fezes"
+    ],
+    "contraindications": [
+      "Loperamida (proibido)"
+    ]
+  },
+  {
+    "identification": "07e1c8e2-022b-44d9-b8bf-32bee830d071",
+    "id": "drge",
+    "name": "Doença do Refluxo Gastroesofágico (DRGE)",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "K21.9",
+    "minScore": 35,
+    "symptoms": {
+      "AZIA": 45,
+      "REGURGITAÇÃO": 35,
+      "DOR_EPIGASTRICA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar Inibidor de Bomba de Prótons (Omeprazol 20mg a 40mg/dia em jejum por 4 a 8 semanas). Orientar cabeceira da cama elevada, evitar deitar nas 2 horas pós-prandiais, suspender cafeína, fumo e gorduras.",
+    "exams": [
+      "Endoscopia Digestiva Alta (EDA - Recomendado se > 45 anos ou com sinais de alarme como disfagia/perda de peso)"
+    ],
+    "contraindications": [
+      "Anti-inflamatórios Não Esteroidais (AINEs - agravam lesão de mucosa)"
+    ]
+  },
+  {
+    "identification": "f93f2cba-4e22-4efb-9be0-0d43b69bdaf2",
+    "id": "gastrite",
+    "name": "Gastrite Aguda / Dispepsia Funcional",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "K29",
+    "minScore": 30,
+    "symptoms": {
+      "DOR_EPIGASTRICA": 40,
+      "AZIA": 30,
+      "NAUSEAS": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar Omeprazol 20mg/dia em jejum por 4 semanas. Orientar fracionamento alimentar, evitar gorduras, café, álcool e tabaco. Suspender imediatamente AINEs.",
+    "exams": [
+      "Pesquisa de H. pylori no ar expirado ou fezes",
+      "Endoscopia Digestiva Alta (EDA)"
+    ],
+    "contraindications": [
+      "AAS",
+      "Ibuprofeno e AINEs em geral"
+    ]
+  },
+  {
+    "identification": "1f5152cd-9384-4590-ba41-9c1facdfdd93",
+    "id": "ulcera_peptica",
+    "name": "Úlcera Péptica Gástrica ou Duodenal",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "K27",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_EPIGASTRICA": 50,
+      "AZIA": 25,
+      "NAUSEAS": 25
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever IBP (Omeprazol 40mg/dia em jejum por 4 a 8 semanas). Investigar erradicação de H. pylori (Amoxicilina 1g 12/12h + Claritromicina 500mg 12/12h por 14 dias associado ao IBP). Suspender AINEs em absoluto.",
+    "exams": [
+      "Endoscopia Digestiva Alta com biópsia gástrica (Essencial para excluir malignidade)"
+    ],
+    "contraindications": [
+      "Anti-inflamatórios Não Esteroidais (AINEs)"
+    ]
+  },
+  {
+    "identification": "98ba6b91-4842-49a2-94e5-5b108d5d9d42",
+    "id": "hemorroidas",
+    "name": "Doença Hemorroidária Crônica ou Agudizada",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "I84",
+    "minScore": 30,
+    "symptoms": {
+      "CONSTIPACAO": 20,
+      "MELENA": 30,
+      "PRURIDO_ANAL": 50
+    },
+    "vitalCriteria": {},
+    "conduct": "Combater constipação através de dieta fibrosa e alta hidratação. Banhos de assento mornos por 10-15 minutos. Pomadas analgésicas/corticosteroides tópicos de curto prazo (máx 7 dias). Evitar uso de papel higiênico seco.",
+    "exams": [
+      "Anoscopia / Proctologia clínica"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "2b0bef4a-bef7-4cf9-b7b4-7136cb53bedf",
+    "id": "infeccao_urinaria",
+    "name": "Infecção do Trato Urinário Baixo (Cistite)",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "N30",
+    "minScore": 40,
+    "symptoms": {
+      "DYSURIA": 35,
+      "POLACIURIA": 35,
+      "DOR_SUPRAPUBICA": 20,
+      "URINA_FÉTIDA": 10
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Nitrofurantoína 100mg de 12/12h por 5 dias ou Fosfomicina Trometamol 3g dose única. Orientar aumento de ingestão hídrica. Se febre e dor lombar associadas, considerar Pielonefrite aguda.",
+    "exams": [
+      "Urina Tipo I (EAS)",
+      "Urocultura com Antibiograma"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "825516ac-80c5-4a7f-9f68-564a9c1e0d73",
+    "id": "pielonefrite",
+    "name": "Pielonefrite Aguda (ITU Alta)",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "N10",
+    "minScore": 40,
+    "symptoms": {
+      "FEBRE": 25,
+      "DOR_LOMBAR": 35,
+      "DYSURIA": 20,
+      "NÁUSEAS": 20
+    },
+    "vitalCriteria": {
+      "temperatureMin": 37.8
+    },
+    "conduct": "Pesquisar sinal de Giordano positivo no exame físico. Coletar Urocultura imediatamente. Iniciar Ciprofloxacino 500mg de 12/12h por 7 dias (ou Levofloxacino 750mg/dia por 5 dias). Se sinais de sepse ou vômitos incoercíveis, encaminhar para internação e antibioticoterapia endovenosa.",
+    "exams": [
+      "Urocultura com Antibiograma (Obrigatório)",
+      "Urina Tipo I",
+      "Ultrassonografia Renal (Se suspeita de obstrução/cálculo)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "8fe5205e-62f1-4697-bd69-b346e991eadb",
+    "id": "prostatite",
+    "name": "Prostatite Bacteriana Aguda",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "N41.0",
+    "minScore": 35,
+    "symptoms": {
+      "DYSURIA": 30,
+      "POLACIURIA": 20,
+      "DOR_SUPRAPUBICA": 25,
+      "FEBRE": 25
+    },
+    "vitalCriteria": {},
+    "conduct": "Evitar massagem prostática (risco de bacteremia). Prescrever Ciprofloxacino 500mg de 12/12h por 14 a 28 dias ou Sulfametoxazol-Trimetoprima. Controle ágil de sepse.",
+    "exams": [
+      "Urina Tipo I",
+      "Urocultura com Antibiograma",
+      "PSA Sérico (Estará elevado agudamente - não dosar na crise)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "fa50e90e-0559-42db-b420-7d9810a24302",
+    "id": "dip",
+    "name": "Doença Inflamatória Pélvica (DIP) Leve/Moderada",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "N73.9",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_PÉLVICA": 50,
+      "FEBRE": 20,
+      "DOR_RELAÇÃO": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Tratamento ambulatorial (DIP leve/moderada): prescrever Ceftriaxona 500mg IM dose única + Doxiciclina 100mg VO 12/12h por 14 dias + Metronidazol 250mg VO 12/12h por 14 dias. Abster de relações sexuais.",
+    "exams": [
+      "Ultrassonografia Pélvica / Transvaginal",
+      "Hemograma Completo",
+      "Rastreio de Clamídia e Gonorreia"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "1bed6b8d-f51b-4407-ae31-132d54b14077",
+    "id": "vaginite_candida",
+    "name": "Vaginite por Candida (Candidíase Vulvovaginal)",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "B37.3",
+    "minScore": 35,
+    "symptoms": {
+      "PRURIDO_VAGINAL": 40,
+      "CORRIMENTO_BRANCO": 40,
+      "DYSURIA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Miconazol creme vaginal 2% à noite por 7 dias ou Fluconazol 150mg VO dose única. Higiene adequada, preferir calcinhas de algodão e evitar duchas vaginais.",
+    "exams": [
+      "Exame especular ginecológico",
+      "Microscopia a fresco de secreção"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "d5045558-d168-4dd2-aef0-ca496f470813",
+    "id": "vaginose_bacteriana",
+    "name": "Vaginose Bacteriana (Vaginite por Gardnerella)",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "N76.0",
+    "minScore": 35,
+    "symptoms": {
+      "CORRIMENTO_BRANCO": 50,
+      "URINA_FÉTIDA": 30,
+      "PRURIDO_VAGINAL": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Tratamento preferencial: prescrever Metronidazol 250mg VO 12/12h por 7 dias ou Metronidazol gel vaginal por 5 noites. Não há recomendação de tratamento sistemático do parceiro.",
+    "exams": [
+      "Critérios de Amsel (pH vaginal > 4.5, odor de peixe com KOH, Clue cells)"
+    ],
+    "contraindications": [
+      "Bebidas alcoólicas durante e até 24h após Metronidazol (efeito Antabuse/dissulfiram)"
+    ]
+  },
+  {
+    "identification": "388df913-6d7e-44bc-9ea6-efe662de8883",
+    "id": "tricomoniase",
+    "name": "Tricomoníase Urogenital",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "A59.0",
+    "minScore": 35,
+    "symptoms": {
+      "CORRIMENTO_BRANCO": 40,
+      "PRURIDO_VAGINAL": 30,
+      "DYSURIA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Metronidazol 2g VO dose única ou 500mg de 12/12h por 7 dias. **Obrigatório tratar o parceiro**. Abster de atividade sexual até cura clínica.",
+    "exams": [
+      "Microscopia a fresco (visualização de protozoário móvel flagelado)",
+      "Exame especular (colo em morango)"
+    ],
+    "contraindications": [
+      "Álcool concomitante com Metronidazol"
+    ]
+  },
+  {
+    "identification": "795302da-d0f0-492e-8f52-36a86999851b",
+    "id": "clamidia",
+    "name": "Infecção por Clamídia (Chlamydia trachomatis)",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "A56",
+    "minScore": 35,
+    "symptoms": {
+      "CORRIMENTO_BRANCO": 35,
+      "DYSURIA": 35,
+      "DOR_PÉLVICA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Azitromicina 1g VO dose única ou Doxiciclina 100mg VO 12/12h por 7 dias. Tratar parceiros sexuais. Rastrear outras ISTs.",
+    "exams": [
+      "Teste de PCR na urina ou secreção (padrão ouro)",
+      "Exame especular ginecológico"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "5b8d199d-642f-4fc1-9139-151705e9eefd",
+    "id": "gonorreia",
+    "name": "Uretrite / Cervicite por Gonorreia",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "A54",
+    "minScore": 35,
+    "symptoms": {
+      "CORRIMENTO_BRANCO": 40,
+      "DYSURIA": 40,
+      "DOR_PÉLVICA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Ceftriaxona 500mg IM dose única + Azitromicina 1g VO dose única (co-tratamento devido à alta taxa de infecção mista com Clamídia). Notificar e tratar parceiros.",
+    "exams": [
+      "Bacterioscopia de secreção uretral/cervical (pesquisa de diplococos gram-negativos intracelulares)",
+      "Cultura Thayer-Martin"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "4d2e9b17-0a9e-40b7-9f3a-1b440115270d",
+    "id": "lombalgia",
+    "name": "Lombalgia Aguda Inespecífica",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M54.5",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_LOMBAR": 60,
+      "TENSAO_MUSCULAR": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Tratamento conservador. Evitar repouso absoluto (estimular caminhadas leves). Analgesia simples com Dipirona 1g de 6/6h. Calor local. Prescrever relaxante muscular de curto prazo (Ciclobenzaprina 5mg). Rastrear red flags.",
+    "exams": [
+      "Radiografia de Coluna Lombar (Apenas se houver sinais de alerta como trauma, perda de peso ou febre)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "59ed049a-ce05-4706-929a-024bc1f0c972",
+    "id": "cervicalgia",
+    "name": "Cervicalgia Aguda (Dor no Pescoço)",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M54.2",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_PESCOÇO": 60,
+      "TENSAO_MUSCULAR": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Calor local por 15-20 min. Evitar posições viciosas ao celular/computador. Analgésicos comuns (Dipirona) e alongamentos cervicais leves. Se dor persistente, fisioterapia motora analgésica.",
+    "exams": [
+      "Avaliação de amplitude de movimentos e reflexos",
+      "Radiografia de coluna cervical (Não indicado na ausência de trauma)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "5b0eff22-308b-4fd9-9271-0571aaee1c68",
+    "id": "osteoartrite",
+    "name": "Osteoartrite / Osteoartrose Crônica",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M19.9",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_ARTICULAR": 60,
+      "RIGIDEZ_ARTICULAR": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Estimular perda de peso e exercícios físicos resistidos (fortalecimento de quadríceps para artrose de joelho). Analgesia preferencial com Paracetamol 500mg a 1g ou Dipirona. Evitar AINEs sistêmicos de uso prolongado.",
+    "exams": [
+      "Radiografia simples das articulações acometidas (revelará estreitamento de espaço articular e osteófitos)"
+    ],
+    "contraindications": [
+      "Anti-inflamatórios Não Esteroidais (AINEs) contínuos em idosos e nefropatas"
+    ]
+  },
+  {
+    "identification": "5d8570ee-c8c8-438d-a72e-79e4fd6baac9",
+    "id": "artrite_reumatoide",
+    "name": "Suspeita de Artrite Reumatóide",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M06.9",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_ARTICULAR": 45,
+      "RIGIDEZ_ARTICULAR": 35,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar analgesia de suporte. Rastrear anticorpos e marcadores inflamatórios. Se preenchidos os critérios de reumatologia, encaminhar de forma prioritária para início precoce de MMCDs (Metotrexato).",
+    "exams": [
+      "Fator Reumatoide",
+      "Anticorpo Anti-CCP",
+      "Velocidade de Hemossedimentação (VHS)",
+      "Proteína C Reativa (PCR)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "4c95daab-df0b-40e0-9c80-9d072d9dedb7",
+    "id": "gota",
+    "name": "Gota Aguda (Artrite Gotosa)",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M10",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_ARTICULAR": 70,
+      "FEBRE": 15,
+      "TOFO_GOTOSO": 15
+    },
+    "vitalCriteria": {},
+    "conduct": "Crise aguda: prescrever Colchicina 0,5mg de 1/1h até controle da dor (máximo de 3 a 4 comprimidos/dia) ou AINEs de alta potência. Iniciar Alopurinol somente após a resolução completa da crise inflamatória.",
+    "exams": [
+      "Dosagem de Ácido Úrico Sérico",
+      "Radiografia das articulações envolvidas",
+      "Pesquisa de cristais de urato no líquido sinovial"
+    ],
+    "contraindications": [
+      "AAS (Aspirina - em doses baixas compete com o ácido úrico e agrava a crise de gota)",
+      "Iniciar Alopurinol na vigência de crise inflamatória aguda"
+    ]
+  },
+  {
+    "identification": "1cadcb81-73e5-4382-bb62-3c0072e016bb",
+    "id": "tendinite",
+    "name": "Tendinite Inespecífica (Ombro/Cotovelo/Punho)",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M65.9",
+    "minScore": 30,
+    "symptoms": {
+      "DOR_ARTICULAR": 60,
+      "TENSAO_MUSCULAR": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Medidas de repouso relativo da articulação. Aplicação de gelo por 15-20 min de 8/8h. Considerar uso de imobilizadores temporários. Analgesia e encaminhamento para fisioterapia de reabilitação.",
+    "exams": [
+      "Ultrassonografia da região tendínea afetada",
+      "Radiografia (para afastar calcificações periarticulares)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9daf1733-07f6-4f9a-ae6b-6e91e1d7c6de",
+    "id": "bursite",
+    "name": "Bursite Inespecífica (Subacromial/Trocantérica)",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M71.9",
+    "minScore": 30,
+    "symptoms": {
+      "DOR_ARTICULAR": 70,
+      "RIGIDEZ_ARTICULAR": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Repouso relativo, gelo local. Analgésicos e compressão se cabível. Casos refratários graves podem necessitar de infiltração local de corticoide guiada por USG.",
+    "exams": [
+      "Ultrassonografia osteoarticular",
+      "Ressonância Magnética (Casos refratários)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "0faac996-1369-4067-9eb9-fa40ccc88b13",
+    "id": "fibromialgia",
+    "name": "Síndrome de Fibromialgia na APS",
+    "specialty": "Musculoesquelética",
+    "bodySystem": "Musculoesquelética",
+    "cid": "M79.7",
+    "minScore": 35,
+    "symptoms": {
+      "DOR_ARTICULAR": 30,
+      "FADIGA": 30,
+      "INSÔNIA": 20,
+      "TRISTEZA_PERSISTENTE": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Estimular atividade física aeróbica de baixo impacto (caminhada, hidroterapia). Iniciar tratamento farmacológico com Amitriptilina 10-25mg à noite ou Pregabalina/Duloxetina. Terapia de suporte.",
+    "exams": [
+      "Exames laboratoriais gerais para excluir hipotireoidismo e artrites (TSH, VHS, PCR, Hemograma)"
+    ],
+    "contraindications": [
+      "Opioides sistêmicos (ex: Tramadol, Codeína - ineficazes na dor central e geram dependência)"
+    ]
+  },
+  {
+    "identification": "dc9a09c6-924d-4099-a783-818cea6cd4a4",
+    "id": "cefaleia_tensional",
+    "name": "Cefaleia Tensional Episódica ou Crônica",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "G44.2",
+    "minScore": 30,
+    "symptoms": {
+      "CEFALEIA": 70,
+      "TENSAO_MUSCULAR": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Orientar sobre controle de estresse e ergonomia no trabalho. Crise: Dipirona 1g ou Paracetamol. Se crônica (>15 dias por mês): prescrever Amitriptilina 10-25mg/dia à noite como profilaxia.",
+    "exams": [
+      "Exame físico neurológico minucioso",
+      "Fundoscopia de olho (descartar hipertensão intracraniana)"
+    ],
+    "contraindications": [
+      "Uso excessivo de analgésicos simples (> 3 dias/semana - causa cefaleia por rebote de medicação)"
+    ]
+  },
+  {
+    "identification": "e6589f6e-fb99-4133-a706-3d49ce9cf6f8",
+    "id": "enxaqueca",
+    "name": "Enxaqueca (Migrânea Crônica ou com Aura)",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "G43",
+    "minScore": 35,
+    "symptoms": {
+      "CEFALEIA": 50,
+      "NÁUSEAS": 30,
+      "VISAO_TURVA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Orientar diário da cefaleia para mapear gatilhos (sono, queijo, vinho). Crise: Dipirona associada a antiemético (Metoclopramida) ou Triptanos. Profilaxia: Propranolol ou Topiramato/Amitriptilina.",
+    "exams": [
+      "Mapeamento de gatilhos alimentares",
+      "Fundoscopia"
+    ],
+    "contraindications": [
+      "Triptanos em pacientes com histórico de infarto agudo do miocárdio ou AVC (risco de vasoespasmo arterial)"
+    ]
+  },
+  {
+    "identification": "e9e6319c-1cbd-4e7f-a650-e6cba4163344",
+    "id": "tontura_vertigem",
+    "name": "Tontura e Vertigem Inespecífica / Labirintite",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "H81.9",
+    "minScore": 30,
+    "symptoms": {
+      "TONTURA": 60,
+      "NÁUSEAS": 20,
+      "ZUMBIDO": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Manobra de Epley no consultório se suspeita de VPPB. Crise aguda: prescrever Dimenidrato (Dramin) ou Meclizina. Para profilaxia/manutenção de sintomas vasculares labirínticos: Flunarizina ou Cinarizina.",
+    "exams": [
+      "Teste de Dix-Hallpike no exame físico",
+      "Dosagem de Glicemia de Jejum e TSH"
+    ],
+    "contraindications": [
+      "Flunarizina de uso contínuo em idosos (risco elevado de parkinsonismo medicamentoso e depressão severa)"
+    ]
+  },
+  {
+    "identification": "1a770c01-dd04-4fbe-84c3-5122d3a00677",
+    "id": "ansiedade_generalizada",
+    "name": "Transtorno de Ansiedade Generalizada (TAG)",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "F41.1",
+    "minScore": 35,
+    "symptoms": {
+      "APREENSAO": 30,
+      "TENSAO_MUSCULAR": 25,
+      "INSÔNIA": 25,
+      "PALPITACOES": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Escala GAD-7. Estimular higiene do sono e caminhadas diárias. Iniciar Sertralina 50mg/dia ou Escitalopram 10mg/dia. Psicoterapia (TCC). Evitar uso de Benzodiazepínicos de forma crônica.",
+    "exams": [
+      "TSH (excluir hipertireoidismo)",
+      "Hemograma Completo"
+    ],
+    "contraindications": [
+      "Benzodiazepínicos em idosos",
+      "Uso prolongado de Clonazepam sem desmame planejado"
+    ]
+  },
+  {
+    "identification": "4f3beefd-78c1-4cad-a695-eb9e3745db84",
+    "id": "depressao",
+    "name": "Episódio Depressivo Leve a Moderado",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "F32",
+    "minScore": 35,
+    "symptoms": {
+      "TRISTEZA_PERSISTENTE": 30,
+      "ANEDONIA": 30,
+      "FADIGA": 20,
+      "PERDA_APETITE": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Aplicar escala PHQ-9. Escuta qualificada. Iniciar Fluoxetina 20mg a 40mg/dia ou Sertralina 50mg/dia. Terapia Cognitivo-Comportamental. Avaliar risco de suicídio ativamente em todas as consultas.",
+    "exams": [
+      "Vitamina B12",
+      "Ácido Fólico",
+      "TSH (Excluir hipotireoidismo clínico)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "dbcc0f1f-c622-4179-91d2-481e4eda0089",
+    "id": "insonia",
+    "name": "Insônia Primária Crônica ou Aguda",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "F51.0",
+    "minScore": 30,
+    "symptoms": {
+      "INSÔNIA": 80,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Instituir regras estritas de Higiene do Sono. Se necessário, prescrever Fitoterápicos (Valeriana, Passiflora) ou indutor não-benzodiazepínico de curto prazo (Zolpidem 5mg a 10mg à noite por no máximo 4 semanas).",
+    "exams": [
+      "Diário do Sono do Paciente por 14 dias"
+    ],
+    "contraindications": [
+      "Uso contínuo de Benzodiazepínicos e indutores do sono em idosos (elevam taxa de quedas e demência)"
+    ]
+  },
+  {
+    "identification": "0e80f285-bea0-40f9-aa91-8e51e01ec9b6",
+    "id": "transtorno_panico",
+    "name": "Transtorno de Pânico com Agorafobia",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "F41.0",
+    "minScore": 35,
+    "symptoms": {
+      "PALPITACOES": 40,
+      "APREENSAO": 30,
+      "INSÔNIA": 15,
+      "DOR_TORACICA": 15
+    },
+    "vitalCriteria": {},
+    "conduct": "Tratamento de manutenção com ISRS (Escitalopram ou Sertralina). Para crises agudas intensas, uso pontual e controlado de Alprazolam. Encaminhar para psicoterapia.",
+    "exams": [
+      "Eletrocardiograma (ECG - para dar segurança e afastar infarto ao paciente)"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "d2f61398-4ff5-47cb-be2d-26a7ae1326e5",
+    "id": "fragilidade_idoso",
+    "name": "Síndrome da Fragilidade no Idoso",
+    "specialty": "Geriatria",
+    "bodySystem": "Geriatria",
+    "cid": "R54",
+    "minScore": 35,
+    "symptoms": {
+      "FADIGA": 30,
+      "PERDA_PESO": 30,
+      "QUEDAS": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Avaliação Multidimensional (IVCF-20). Combater a sarcopenia através de fisioterapia de fortalecimento muscular. Revisar prescrição para evitar a polifarmácia e critérios de Beers.",
+    "exams": [
+      "TSH",
+      "Vitamina D Sérica",
+      "Hemograma",
+      "Dosagem de Creatinina"
+    ],
+    "contraindications": [
+      "Benzodiazepínicos",
+      "Anti-histamínicos de 1ª geração (forte ação anticolinérgica em idosos)"
+    ]
+  },
+  {
+    "identification": "33062d2e-e846-4b83-80d5-f6830cec4e64",
+    "id": "pre_natal_baixo_risco",
+    "name": "Acompanhamento de Pré-Natal de Baixo Risco",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "Z34",
+    "minScore": 35,
+    "symptoms": {
+      "AMENORREIA": 40,
+      "NAUSEAS": 30,
+      "FADIGA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Confirmar gravidez via Beta-HCG. Iniciar Ácido Fólico 0,4mg/dia e Sulfato Ferroso. Agendar exames laboratoriais do 1º trimestre. Vacinação de gestante em dia.",
+    "exams": [
+      "Hemograma e Glicemia de Jejum",
+      "Tipagem Sanguínea e Fator Rh",
+      "Sorologias (HIV, VDRL, Hepatite B, Toxoplasmose)",
+      "Urocultura com EAS"
+    ],
+    "contraindications": [
+      "Vacinas de vírus vivos durante a gestação (Rubéola, Tríplice Viral)",
+      "Anti-hipertensivos teratogênicos (IECA/BRA)"
+    ]
+  },
+  {
+    "identification": "dc174318-7fca-46ab-a884-785ffb9ac8b0",
+    "id": "otite_media",
+    "name": "Otite Média Aguda (OMA)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "H66",
+    "minScore": 30,
+    "symptoms": {
+      "DOR_OUVIDO": 50,
+      "FEBRE": 30,
+      "OLHOS_LACRIMEJANDO": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Otoscopia clínica obrigatória. Dipirona para dor. Amoxicilina 50mg/kg/dia se bacteriana.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "Gotas otológicas se perfuração timpânica"
+    ]
+  },
+  {
+    "identification": "55238c33-b405-4287-b5c5-8127a823175a",
+    "id": "conjuntivite",
+    "name": "Conjuntivite Aguda Infecciosa/Alérgica",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "H10",
+    "minScore": 30,
+    "symptoms": {
+      "OLHOS_LACRIMEJANDO": 50,
+      "VISAO_TURVA": 20,
+      "FEBRE": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Higienização com soro. Se bacteriana (secreção purulenta): colírio de Tobramicina ou Cloranfenicol por 5 dias.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "934d7ed0-9c47-44ed-9bf3-6bfa019f2e0f",
+    "id": "dermatite_atopica",
+    "name": "Dermatite Atópica (Eczema Atópico)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "L20",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 40,
+      "PELE_SECA": 40,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Hidratação intensa de barreira. Corticoide tópico nas lesões agudas por período limitado. Evitar banhos quentes.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "fe985c50-d1aa-4f4b-846d-084aea19f8c8",
+    "id": "dermatite_contato",
+    "name": "Dermatite de Contato Aguda",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "L23",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 60,
+      "PELE_SECA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Afastar agente alérgeno causador. Creme de corticoide (Hidrocortisona) e anti-histamínicos se prurido intenso.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "a17027f7-fd44-40a8-af1a-20d5cbda08b6",
+    "id": "acne_vulgar",
+    "name": "Acne Vulgar (Graus I a IV)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "L70",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 80,
+      "PELE_SECA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Higiene facial com sabonete sebostático. Peróxido de Benzóila, Adapaleno ou antibiótico tópico. Casos graves: Isotretinoína.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "85f9cc1d-c4c0-466a-b11e-dff9e63f4a4a",
+    "id": "psoriase",
+    "name": "Psoríase Vulgar em Placas",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "L40",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 50,
+      "PELE_SECA": 50
+    },
+    "vitalCriteria": {},
+    "conduct": "Hidratantes e ceratolíticos tópicos. Corticoide tópico de alta potência. Casos graves: encaminhar para fototerapia.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "ba40cbbc-4aa8-4cc1-85e6-632908e9d822",
+    "id": "micose_cutanea",
+    "name": "Micose Cutânea (Tinha do Corpo/Pé)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B35",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 60,
+      "PELE_SECA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever antifúngico tópico (Cetoconazol ou Miconazol) 2x ao dia por 14 a 21 dias. Manter a pele bem seca.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9ffa34d8-85bc-4aec-beb6-f86af9f3ac4e",
+    "id": "herpes_simples",
+    "name": "Herpes Simples Labial ou Genital",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B00",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 70,
+      "FEBRE": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Aciclovir 200mg VO 4/4h por 5 dias ou Aciclovir creme tópico. Iniciar nas primeiras 72h de sintomas.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c1eaa3cf-c455-4980-b042-9dc65e1ce572",
+    "id": "herpes_zoster",
+    "name": "Herpes Zoster (Cobreiro)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B02",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 60,
+      "DOR_ARTICULAR": 20,
+      "FEBRE": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Aciclovir 800mg VO de 4/4h (5x/dia) por 7 dias. Analgesia potente (Gabapentina se dor neuropática pós-herpética).",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "Corticoides sistêmicos isolados na fase aguda"
+    ]
+  },
+  {
+    "identification": "76dce462-d487-4e90-a584-bf9258a4a113",
+    "id": "urticaria",
+    "name": "Urticária Aguda Inespecífica",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "L50",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 70,
+      "FADIGA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever anti-histamínicos de segunda geração (Fexofenadina ou Desloratadina). Evitar corticoides de forma indiscriminada.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9aaa6548-0b06-4a25-8148-70c74b67ce29",
+    "id": "escabiose",
+    "name": "Escabiose Humana (Sarna)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B86",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 60,
+      "PRURIDO_NASAL": 20,
+      "INSÔNIA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Permetrina loção a 5% (aplicar no corpo do pescoço para baixo, deixar por 8-12h e lavar). Tratar familiares.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "b98c8d61-2efd-40ec-abd5-7f21aab7ab1f",
+    "id": "pediculose",
+    "name": "Pediculose da Cabeça (Piolho)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B85",
+    "minScore": 30,
+    "symptoms": {
+      "PRURIDO_NASAL": 60,
+      "INSÔNIA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Permetrina 1% shampoo ou Ivermectina oral em dose única. Remoção mecânica de lêndeas com pente fino.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "ad7e7f18-4a41-45e4-8f45-973ba1ca4f4e",
+    "id": "verruga_viral",
+    "name": "Verrugas Virais Cutâneas (HPV)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B07",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 100
+    },
+    "vitalCriteria": {},
+    "conduct": "Aplicação tópica de Ácido Salicílico + Ácido Láctico ou Crioterapia local no consultório de APS.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "b657d3fd-7ace-4361-a0c8-1c1e00376eb2",
+    "id": "asma_infantil",
+    "name": "Asma Brônquica Infantil",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "J45.9",
+    "minScore": 30,
+    "symptoms": {
+      "DISPNEIA": 30,
+      "CHADO_PEITO": 30,
+      "TOSSE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Inalação com Salbutamol. Uso de espaçador obrigatório para crianças. Corticoterapia inalatória de controle se recorrente.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "Uso de comprimidos de broncodilatadores"
+    ]
+  },
+  {
+    "identification": "2ce25cfb-3c7c-4027-9be4-3d3c53ae2897",
+    "id": "bronquiolite",
+    "name": "Bronquiolite Viral Aguda Infantil",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "J21.9",
+    "minScore": 30,
+    "symptoms": {
+      "TOSSE": 40,
+      "DISPNEIA": 30,
+      "FEBRE": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Suporte: lavagem nasal constante, hidratação. Oxigenoterapia se saturação < 92%. Não usar broncodilatadores de rotina.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "Antibióticos na rotina sem infecção secundária"
+    ]
+  },
+  {
+    "identification": "1f9a35e3-a08d-47bb-8bef-e11f3e8475ef",
+    "id": "pneumonia_infantil",
+    "name": "Pneumonia Aguda Infantil na APS",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "J18.9",
+    "minScore": 30,
+    "symptoms": {
+      "TOSSE": 30,
+      "FEBRE": 40,
+      "DISPNEIA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Amoxicilina 50mg/kg/dia em 2 ou 3 tomadas por 7 dias. Monitorar tiragem subcostal.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c9f012b5-d777-474b-9366-f7c3f6f70c4f",
+    "id": "desidratacao_criança",
+    "name": "Desidratação Aguda Infantil",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "E86",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 40,
+      "QUEDAS": 30,
+      "FEBRE": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Plano A (domiciliar) ou Plano B (reidratação oral na UBS - 50 a 100 ml/kg em 4h). Monitorar choro sem lágrimas.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "1bdffe17-408d-45a4-a123-b61ac1ac48df",
+    "id": "desnutricao_infantil",
+    "name": "Desnutrição Infantil na APS",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "E46",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 50,
+      "PERDA_PESO": 50
+    },
+    "vitalCriteria": {},
+    "conduct": "Avaliar curva de crescimento. Suplementação alimentar e vitamínica (Ferro, Vitamina A). Encaminhar ao nutricionista da UBS.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "533c6266-fcfd-4d4e-88f6-041cb23ea6c6",
+    "id": "cólica_lactente",
+    "name": "Cólica do Lactente (Fisiológica)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "R10.4",
+    "minScore": 30,
+    "symptoms": {
+      "CÓLICA": 60,
+      "INSÔNIA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Acolhimento familiar. Orientar compressas mornas, massagens abdominais. Explicar caráter benigno e autolimitado.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "dd484348-89d1-4633-98ca-1dee03f3b688",
+    "id": "dermatite_fraldas",
+    "name": "Dermatite das Fraldas (Assadura)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "L22",
+    "minScore": 30,
+    "symptoms": {
+      "RASH": 80,
+      "PELE_SECA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Trocas frequentes de fralda. Pomadas de barreira (Óxido de Zinco). Se infecção por fungo, associar Nistatina creme.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9ab85a00-0b51-498e-8524-39e1690e0f90",
+    "id": "sapinho",
+    "name": "Candidíase Oral Infantil (Sapinho)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B37.0",
+    "minScore": 30,
+    "symptoms": {
+      "CORRIMENTO_BRANCO": 60,
+      "PERDA_APETITE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Nistatina suspensão oral (aplicar na cavidade oral após as mamadas, 4x ao dia). Higienizar bicos de mamadeira.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "8835af15-e511-432f-b711-bbdd05ae9382",
+    "id": "escarlatina",
+    "name": "Febre Escarlatina",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "A38",
+    "minScore": 30,
+    "symptoms": {
+      "FEBRE": 30,
+      "DOR_GARGANTA": 30,
+      "RASH": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Amoxicilina por 10 dias para prevenção de febre reumática. Higiene e isolamento dos contatos por 24h.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "277a4e34-d5e6-4c72-adac-c8602452431f",
+    "id": "caxumba",
+    "name": "Caxumba (Parotidite Infecciosa)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B26",
+    "minScore": 30,
+    "symptoms": {
+      "FEBRE": 40,
+      "DOR_PESCOÇO": 60
+    },
+    "vitalCriteria": {},
+    "conduct": "Tratamento de suporte com analgésicos simples e compressas frias locais. Monitorar ocorrência de orquite pós-puberal.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "d1a6c4d8-13d8-43ac-99f1-6f3b184ad210",
+    "id": "sarampo",
+    "name": "Sarampo (Quadro Agudo)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B05",
+    "minScore": 30,
+    "symptoms": {
+      "FEBRE": 20,
+      "TOSSE": 20,
+      "CORIZA": 20,
+      "RASH": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Notificação imediata e bloqueio vacinal dos contatos. Suplementação com Vitamina A. Sintomáticos e hidratação.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f142df2c-79e7-4246-a836-0125ec7b354b",
+    "id": "rubeola",
+    "name": "Rubéola Aguda",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B06",
+    "minScore": 30,
+    "symptoms": {
+      "FEBRE": 30,
+      "RASH": 40,
+      "DOR_ARTICULAR": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Notificação compulsória. Tratamento de suporte. Evitar contato absoluto com gestantes devido à rubéola congênita.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "53a4b695-8c34-450c-89aa-1fa9bbd45578",
+    "id": "catapora",
+    "name": "Varicela (Catapora)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B01",
+    "minScore": 30,
+    "symptoms": {
+      "FEBRE": 20,
+      "RASH": 60,
+      "INSÔNIA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Higiene corporal e corte de unhas para evitar infecção bacteriana secundária. Antihistamínicos para prurido intenso.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "AAS (Risco de Síndrome de Reye)"
+    ]
+  },
+  {
+    "identification": "85333258-fa38-43d8-99b2-07e70f86a58a",
+    "id": "coqueluche",
+    "name": "Coqueluche (Tosse Comprida)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "A37.0",
+    "minScore": 30,
+    "symptoms": {
+      "TOSSE": 70,
+      "FEBRE": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Azitromicina por 5 dias. Notificação compulsória. Vacinação preventiva de gestantes (dTpa).",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "5b5d19e3-4438-4d6b-aa62-9cb96bf4011d",
+    "id": "ic_leve",
+    "name": "Insuficiência Cardíaca Estável (NYHA I-II)",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I50",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 40,
+      "DISPNEIA": 40,
+      "SOBREPESO": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever IECA ou BRA associado a Betabloqueador de liberação lenta (Carvedilol). Monitorar função renal.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "Bloqueadores de Canal de Cálcio não-di-hidropiridínicos"
+    ]
+  },
+  {
+    "identification": "8c577b3b-61fd-4811-b329-14e39e03cf7d",
+    "id": "dac_estavel",
+    "name": "Doença Arterial Coronariana Estável",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I25",
+    "minScore": 30,
+    "symptoms": {
+      "DOR_TORACICA": 60,
+      "FADIGA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever AAS 100mg/dia + Estatina de alta potência (Atorvastatina 40mg) + Betabloqueador. Encaminhar para teste ergométrico.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "402363a9-1246-44c8-85d7-f3a98ce38fcd",
+    "id": "angina_estavel",
+    "name": "Angina Pectoris Estável",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I20",
+    "minScore": 30,
+    "symptoms": {
+      "DOR_TORACICA": 70,
+      "FADIGA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Nitrato de ação rápida sublingual (Monocordil) para crises de dor. Otimizar tratamento da DAC estável.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f4377508-3709-4805-bdfe-405b2efdf4dc",
+    "id": "fibrilacao_atrial",
+    "name": "Fibrilação Atrial Crônica Controlada",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I48",
+    "minScore": 30,
+    "symptoms": {
+      "PALPITACOES": 40,
+      "TONTURA": 30,
+      "FADIGA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Avaliar risco tromboembólico pelo escore CHA2DS2-VASc para indicar anticoagulação oral. Controle de frequência cardíaca.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "681c72da-d045-4b61-be9c-037035cc54ef",
+    "id": "taquicardia_sinusal",
+    "name": "Taquicardia Sinusal Fisiológica ou Reacional",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "R00.0",
+    "minScore": 30,
+    "symptoms": {
+      "PALPITACOES": 70,
+      "TONTURA": 30
+    },
+    "vitalCriteria": {},
+    "conduct": "Pesquisar e tratar causa base (Anemia, Desidratação, Hipertireoidismo ou Ansiedade). Orientar repouso e hidratação.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c9ed6216-e24b-43e3-ab9c-3a450d13d07e",
+    "id": "hipotensao_ortostatica",
+    "name": "Hipotensão Ortostática na APS",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I95.1",
+    "minScore": 30,
+    "symptoms": {
+      "TONTURA": 60,
+      "VISAO_TURVA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Orientar paciente a levantar-se de forma lenta e pausada. Revisar e se necessário reduzir doses de anti-hipertensivos.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "8ed88fae-23b0-46a4-b5c6-0ef29f04c13e",
+    "id": "sincope_vasovagal",
+    "name": "Síncope Vasovagal (Síncope Neurocardiogênica)",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "R55",
+    "minScore": 30,
+    "symptoms": {
+      "TONTURA": 50,
+      "VISAO_TURVA": 30,
+      "PALPITACOES": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Orientar manobras de contrapressão física ao sentir pródromos. Hidratação oral abundante de até 2L/dia.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "4398e678-bab6-46d1-b4fd-2e2b39952a51",
+    "id": "enjoo_matinal",
+    "name": "Enjoo Matinal / Êmese Gravídica Leve",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "O21.0",
+    "minScore": 30,
+    "symptoms": {
+      "NAUSEAS": 80,
+      "FADIGA": 20
+    },
+    "vitalCriteria": {},
+    "conduct": "Prescrever Piridoxina (Vitamina B6) isolada ou associada a Doxilamina à noite. Alimentação fracionada.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "96f344ae-918b-4e5d-a756-2d480967c2af",
+    "id": "diabetes_gestacional",
+    "name": "Diabetes Mellitus Gestacional (DMG)",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "O24.4",
+    "minScore": 30,
+    "symptoms": {
+      "POLIURIA": 30,
+      "POLIDIPSIA": 30,
+      "FADIGA": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Iniciar imediatamente plano de orientação dietética rígido por 2 semanas. Se persistência, iniciar Insulinoterapia.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f51db81f-9221-42a3-ab52-1ccb55e6429f",
+    "id": "pre_eclampsia_leve",
+    "name": "Pré-Eclâmpsia Leve / Hipertensão Gestacional",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "O14",
+    "minScore": 30,
+    "symptoms": {
+      "CEFALEIA": 30,
+      "VISAO_TURVA": 30,
+      "ZUMBIDO": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Acompanhamento pré-natal semanal. Monitorar de perto a PA e proteinúria. Repouso relativo no leito.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": [
+      "IECA e BRA (altamente teratogênicos na gestação)"
+    ]
+  },
+  {
+    "identification": "ffd43aef-9ced-420c-a7af-44ad2103e844",
+    "id": "puerperio",
+    "name": "Cuidados Pós-Parto (Puerpério Normal)",
+    "specialty": "Saúde da Mulher",
+    "bodySystem": "Saúde da Mulher",
+    "cid": "Z39",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 60,
+      "TRISTEZA_PERSISTENTE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Avaliar cicatrização da cesárea/episiotomia, incentivar aleitamento materno exclusivo e aplicar escala de Edinburgo.",
+    "exams": [
+      "Hemograma",
+      "Avaliação clínica estruturada"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "85b511d8-2be7-486f-a829-17ad542bacfc",
+    "id": "ulcura_peptica",
+    "name": "Úlcera Péptica Ativa",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "K27.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Úlcera Péptica Ativa (K27.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "31c7c0b6-76d7-4924-9ed2-9c97cf6f5366",
+    "id": "tept",
+    "name": "Transtorno de Estresse Pós-Traumático (TEPT)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "F43.1",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Transtorno de Estresse Pós-Traumático (TEPT) (F43.1).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "e1de0308-b67c-465e-984b-f65a29dc609d",
+    "id": "bipolar",
+    "name": "Transtorno Bipolar Estabilizado na APS",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "F31",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Transtorno Bipolar Estabilizado na APS (F31).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f55ac13b-6909-4109-965e-6e19f552bd8f",
+    "id": "candidiase_mucosa",
+    "name": "Candidíase de Mucosa / Oral",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "B37.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Candidíase de Mucosa / Oral (B37.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f6d25eba-64f8-4f28-b825-4bce79dd89b3",
+    "id": "diverticular",
+    "name": "Doença Diverticular do Cólon",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "K57",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Doença Diverticular do Cólon (K57).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "8afc6fa3-7d1e-4378-b9ec-039aaa8f4832",
+    "id": "intestino_irritavel",
+    "name": "Síndrome do Intestino Irritável (SII)",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "K58",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Síndrome do Intestino Irritável (SII) (K58).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "3015d2c8-dea3-4cef-856d-152401cd39b3",
+    "id": "celiaca",
+    "name": "Doença Celíaca",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "K90.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Doença Celíaca (K90.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "07e73313-c9c4-4767-b4eb-c86dc86dc78a",
+    "id": "calculo_renal",
+    "name": "Cálculo Renal (Litíase Urinária)",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "N20",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Cálculo Renal (Litíase Urinária) (N20).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "0dd8bd6d-7653-4096-bddd-fc4f0183787b",
+    "id": "insuficiencia_renal",
+    "name": "Insuficiência Renal Crônica Inicial",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "N18.3",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Insuficiência Renal Crônica Inicial (N18.3).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "b6d133cf-4025-42b4-a650-dfcda0a0dcd5",
+    "id": "glomerulonefrite",
+    "name": "Glomerulonefrite Crônica na APS",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "N03",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Glomerulonefrite Crônica na APS (N03).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "cb07be94-d4da-46c4-a16e-8b7672941529",
+    "id": "eczema",
+    "name": "Eczema Alérgico / Dermatite",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "L30",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Eczema Alérgico / Dermatite (L30).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "07b867c3-e33d-460e-87a3-727f4315d17c",
+    "id": "furunculo",
+    "name": "Furúnculo / Antraz",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "L02",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Furúnculo / Antraz (L02).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "2ec254a0-4509-4ab7-87f9-3fb9a454f70e",
+    "id": "abscesso",
+    "name": "Abscesso Cutâneo Agudo",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "L02.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Abscesso Cutâneo Agudo (L02.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "fcbe1a60-1230-4a5b-9ee4-b01f3dea05f1",
+    "id": "celulite_inf",
+    "name": "Celulite Infecciosa de Membros",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "L03.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Celulite Infecciosa de Membros (L03.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "7213f21a-4171-4d7a-aad4-8de2e1527a14",
+    "id": "impetigo",
+    "name": "Impetigo Estafilocócico",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "L01",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Impetigo Estafilocócico (L01).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "2a8fac2c-4b2f-4731-ac06-abfc8192b69d",
+    "id": "ceratose_act",
+    "name": "Ceratose Actínica na Pele",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "L57.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Ceratose Actínica na Pele (L57.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "33271b13-c6fd-4e3b-9185-9e6111cbd4ef",
+    "id": "carcinoma_baso",
+    "name": "Suspeita de Carcinoma Basocelular (CBC)",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "C44",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Suspeita de Carcinoma Basocelular (CBC) (C44).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "ff05549d-a9c7-4bfa-8105-5e2980bccf72",
+    "id": "onicomicose",
+    "name": "Onicomicose (Fungo de Unha)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "B35.1",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Onicomicose (Fungo de Unha) (B35.1).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "cd5af548-4118-44ba-b0ad-ffe060370a3e",
+    "id": "paroniquia",
+    "name": "Paroníquia Aguda",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "L03.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Paroníquia Aguda (L03.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "205bd343-1061-4007-b5ee-0c67310234b6",
+    "id": "estomatite",
+    "name": "Estomatite Aftosa Recorrente",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "K12",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Estomatite Aftosa Recorrente (K12).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "25f578be-8aa1-49bd-aaac-dc663031b0a7",
+    "id": "gengivite",
+    "name": "Gengivite Marginal Aguda",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "K05.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Gengivite Marginal Aguda (K05.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "e3c23a79-f2a3-4a45-b3db-9bd3cf0eb58a",
+    "id": "periodontite",
+    "name": "Periodontite Crônica",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "K05.3",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Periodontite Crônica (K05.3).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c463c0b7-5feb-4265-b6eb-918acbd36cec",
+    "id": "xerostomia",
+    "name": "Xerostomia (Boca Seca)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "K11.7",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Xerostomia (Boca Seca) (K11.7).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f64abdcc-8bf1-4b98-b733-f929767b2af9",
+    "id": "dispepsia",
+    "name": "Dispepsia Funcional",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "K30",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Dispepsia Funcional (K30).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "f36a8065-f1b7-44ae-ab3f-902f5402383a",
+    "id": "esofagite",
+    "name": "Esofagite de Refluxo",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "K21.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Esofagite de Refluxo (K21.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "60c3b83d-d45b-4823-90db-caac8c0c030b",
+    "id": "hernia_hiatal",
+    "name": "Hérnia Hiatal",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "K44",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Hérnia Hiatal (K44).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9cb6408b-1991-4fba-b3fa-7c345c7b387b",
+    "id": "hernia_inguinal",
+    "name": "Hérnia Inguinal não complicada",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "K40",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Hérnia Inguinal não complicada (K40).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "e6f1fb33-6a19-47df-a5d8-7ef3b2bfb3a0",
+    "id": "varizes_membros",
+    "name": "Varizes de Membros Inferiores",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "I83",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Varizes de Membros Inferiores (I83).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "bb4368b8-f33b-493c-be17-5fdcfb6e1c59",
+    "id": "insuf_venosa",
+    "name": "Insuficiência Venosa Crônica",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I87.2",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Insuficiência Venosa Crônica (I87.2).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "5bacbd44-01ff-476b-9102-387aa3ca04c2",
+    "id": "linfedema",
+    "name": "Linfedema Primário ou Secundário",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "I89.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Linfedema Primário ou Secundário (I89.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "1162c3a4-8ebb-4075-9919-803bda5833e9",
+    "id": "trombose_superficial",
+    "name": "Trombose Venosa Superficial (Tromboflebite)",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "I80.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Trombose Venosa Superficial (Tromboflebite) (I80.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "64285e24-70d2-4429-a606-30a47eccbefa",
+    "id": "pe_diabetico",
+    "name": "Pé Diabético (Prevenção e Tratamento Leve)",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "E11.7",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Pé Diabético (Prevenção e Tratamento Leve) (E11.7).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c390fb0e-2aba-4af2-83a9-f84351f4734a",
+    "id": "neuropatia",
+    "name": "Neuropatia Periférica Diabética",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "G62.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Neuropatia Periférica Diabética (G62.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "ae2bf835-9da4-4f3e-b37f-bb39c854b596",
+    "id": "pernas_inquietas",
+    "name": "Síndrome das Pernas Inquietas",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "G25.8",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Síndrome das Pernas Inquietas (G25.8).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "29680acb-5876-4253-858c-2e3149a4adeb",
+    "id": "tremor_essencial",
+    "name": "Tremor Essencial Familiar",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "G25.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Tremor Essencial Familiar (G25.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "7ed9bb53-4c41-4276-bb5c-e84089f36837",
+    "id": "parkinson_inicial",
+    "name": "Doença de Parkinson (Estágio Inicial)",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "G20",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Doença de Parkinson (Estágio Inicial) (G20).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "1ab72872-18bc-496a-bc4f-4092560ac41b",
+    "id": "epilepsia",
+    "name": "Epilepsia Controlada na APS",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "G40",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Epilepsia Controlada na APS (G40).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "68f52006-f28e-4ad4-9a26-031c28cc6d22",
+    "id": "avc_sequelar",
+    "name": "AVC Sequelar (Reabilitação Motora)",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "I69",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para AVC Sequelar (Reabilitação Motora) (I69).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "25f3ebde-635e-45b1-837a-80d0b2ec7a2a",
+    "id": "deficit_cognitivo",
+    "name": "Déficit Cognitivo Leve",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "G31.84",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Déficit Cognitivo Leve (G31.84).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "fb3a3432-4cce-4cb0-81e3-5f92b3ceecde",
+    "id": "alzheimer",
+    "name": "Acompanhamento de Demência de Alzheimer",
+    "specialty": "Saúde Mental",
+    "bodySystem": "Saúde Mental",
+    "cid": "G30",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Acompanhamento de Demência de Alzheimer (G30).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "c7b1a91e-9393-4d8b-a907-a40962296c5d",
+    "id": "tdah",
+    "name": "Transtorno de Déficit de Atenção / Hiperatividade (TDAH)",
+    "specialty": "Urologia / Renal",
+    "bodySystem": "Urologia / Renal",
+    "cid": "F90.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Transtorno de Déficit de Atenção / Hiperatividade (TDAH) (F90.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "4d06692b-ed1b-42e7-aa67-5648ed1554dc",
+    "id": "autismo",
+    "name": "Acompanhamento do Transtorno do Espectro Autista (TEA)",
+    "specialty": "Pediatria / Geral",
+    "bodySystem": "Pediatria / Geral",
+    "cid": "F84.0",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Acompanhamento do Transtorno do Espectro Autista (TEA) (F84.0).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "d988231b-b335-4d2a-a329-28adab4f57db",
+    "id": "meningite_viral",
+    "name": "Meningite Viral (Pós-Tratamento/Acompanhamento)",
+    "specialty": "Gastrointestinal",
+    "bodySystem": "Gastrointestinal",
+    "cid": "A87",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Meningite Viral (Pós-Tratamento/Acompanhamento) (A87).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "9b01a5b2-0f14-4dae-9d0d-88217b760aaa",
+    "id": "febre_reumatica",
+    "name": "Profilaxia de Febre Reumática",
+    "specialty": "Neurológica",
+    "bodySystem": "Neurológica",
+    "cid": "I00",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Profilaxia de Febre Reumática (I00).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "5d99106f-f101-45a2-bd5c-7bb86914cbe9",
+    "id": "cardiopatia_reum",
+    "name": "Cardiopatia Reumática Crônica",
+    "specialty": "Cardiovascular",
+    "bodySystem": "Cardiovascular",
+    "cid": "I09",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Cardiopatia Reumática Crônica (I09).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "71a785af-ffaf-422d-b48d-4f2d1b77aae1",
+    "id": "insuf_cardiaca",
+    "name": "Insuficiência Cardíaca NYHA I-II",
+    "specialty": "Metabólica",
+    "bodySystem": "Metabólica",
+    "cid": "I50.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Insuficiência Cardíaca NYHA I-II (I50.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  },
+  {
+    "identification": "6adcc115-238d-4274-9bc9-cee6033f7e63",
+    "id": "pre_eclampsia",
+    "name": "Pré-Eclâmpsia Leve",
+    "specialty": "Respiratória",
+    "bodySystem": "Respiratória",
+    "cid": "O14.9",
+    "minScore": 30,
+    "symptoms": {
+      "FADIGA": 30,
+      "TONTURA": 30,
+      "FEBRE": 40
+    },
+    "vitalCriteria": {},
+    "conduct": "Conduta e acompanhamento na UBS conforme diretriz clínica para Pré-Eclâmpsia Leve (O14.9).",
+    "exams": [
+      "Hemograma",
+      "Exame físico de rotina"
+    ],
+    "contraindications": []
+  }
+]

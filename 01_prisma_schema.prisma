@@ -1,0 +1,100 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  password  String
+  role      Role     @default(MEDICO)
+  plan      Plan     @default(PRO)
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  appointments  Appointment[]
+  checklists    Checklist[]
+  accessLogs    AccessLog[]
+}
+
+model Patient {
+  id          String   @id @default(cuid())
+  name        String
+  cpf         String   @unique
+  birthDate   DateTime
+  phone       String?
+  insurance   String?
+  sex         String
+  createdAt   DateTime @default(now())
+
+  appointments Appointment[]
+  checklists   Checklist[]
+}
+
+model Appointment {
+  id          String            @id @default(cuid())
+  patientId   String
+  doctorId    String
+  dateTime    DateTime
+  specialty   String
+  type        String            @default("1ª consulta")
+  status      AppointmentStatus @default(AGENDADO)
+  notes       String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  patient Patient @relation(fields: [patientId], references: [id])
+  doctor  User    @relation(fields: [doctorId], references: [id])
+}
+
+model Checklist {
+  id          String   @id @default(cuid())
+  patientId   String
+  doctorId    String
+  data        String   // JSON serializado com todos os campos
+  riskFlags   String?  // JSON com flags detectados
+  aiScore     Float?
+  createdAt   DateTime @default(now())
+
+  patient Patient @relation(fields: [patientId], references: [id])
+  doctor  User    @relation(fields: [doctorId], references: [id])
+}
+
+model AccessLog {
+  id        String   @id @default(cuid())
+  userId    String
+  action    String
+  details   String?
+  ip        String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+enum Role {
+  ADMIN
+  MEDICO
+  RECEPCAO
+}
+
+enum Plan {
+  STARTER
+  PRO
+  ENTERPRISE
+}
+
+enum AppointmentStatus {
+  AGENDADO
+  EM_TRIAGEM
+  EM_CONSULTA
+  FINALIZADO
+  CANCELADO
+}

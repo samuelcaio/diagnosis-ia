@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # 1. Banco de Dados PostgreSQL 15 (Emula Supabase localmente)
+  db:
+    image: postgres:15-alpine
+    container_name: diagnosis-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: diagnosis
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # Monta os scripts de migração do Supabase para inicialização automática do banco local
+      - ./supabase/migrations/001_initial_schema.sql:/docker-entrypoint-initdb.d/001_initial_schema.sql
+      - ./supabase/migrations/002_rls_policies.sql:/docker-entrypoint-initdb.d/002_rls_policies.sql
+      - ./supabase/seed.sql:/docker-entrypoint-initdb.d/003_seed.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d diagnosis"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Backend Java 17 + Spring Boot 3
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: diagnosis-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=diagnosis
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # 3. Frontend React 18 + TS + Tailwind (Vite Dev Server)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: diagnosis-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

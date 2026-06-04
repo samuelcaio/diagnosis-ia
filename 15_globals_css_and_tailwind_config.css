@@ -1,0 +1,144 @@
+/* src/styles/globals.css */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Paleta Diagnosis IA Clinical */
+  --c-primary:       #0284C7;
+  --c-primary-dark:  #0369A1;
+  --c-primary-light: #E0F2FE;
+  --c-secondary:     #059669;
+  --c-secondary-light: #D1FAE5;
+  --c-danger:        #EF4444;
+  --c-danger-light:  #FEE2E2;
+  --c-warn:          #F59E0B;
+  --c-warn-light:    #FEF3C7;
+  --c-bg:            #F8FAFC;
+  --c-surface:       #FFFFFF;
+  --c-border:        #E2E8F0;
+  --c-text:          #0F172A;
+  --c-text-muted:    #64748B;
+  --c-text-light:    #94A3B8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Scrollbar suave */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+/* Focus visível — acessibilidade */
+:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Transições globais suaves */
+button, a, input, select, textarea {
+  transition: all 0.15s ease;
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #E2E8F0 25%, #F1F5F9 50%, #E2E8F0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.4s infinite;
+  border-radius: 6px;
+}
+@keyframes skeleton-loading {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Toast animation */
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.toast-animate { animation: toast-in 0.25s ease; }
+
+/* Dark mode (opcional — ativar via toggle) */
+/* TODO: Implementar toggle de dark mode com next-themes */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #0F172A;
+    --c-surface: #1E293B;
+    --c-border: #334155;
+    --c-text: #F1F5F9;
+    --c-text-muted: #94A3B8;
+    --c-primary-light: #0369A1;
+  }
+}
+*/
+
+
+/* =============================================================================
+   tailwind.config.ts
+   ============================================================================= */
+/*
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './src/pages/**\/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**\/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**\/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary:   { DEFAULT: '#0284C7', dark: '#0369A1', light: '#E0F2FE' },
+        secondary: { DEFAULT: '#059669', light: '#D1FAE5' },
+        clinical:  { bg: '#F8FAFC', surface: '#FFFFFF', border: '#E2E8F0' },
+      },
+      fontFamily: {
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        mono: ['DM Mono', 'monospace'],
+      },
+      borderRadius: {
+        xl: '12px',
+        '2xl': '16px',
+      },
+      boxShadow: {
+        card:   '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
+        'card-md': '0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04)',
+      },
+      animation: {
+        'ping-slow': 'ping-slow 1.2s ease-in-out infinite',
+      },
+      keyframes: {
+        'ping-slow': {
+          '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(1.12)', opacity: '0.85' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
+
+export default config
+*/
