@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://diagnosis-ia.onrender.com/api/$1"
+      "destination": "https://diagnosis-ia.onrender.com/$1"
     },
     {
       "source": "/(.*)",
