@@ -37,4 +37,18 @@ public class AuthController {
     public ResponseEntity<Map<String, String>> logout() {
         return ResponseEntity.ok(Map.of("message", "Sessão encerrada com sucesso."));
     }
+
+    @GetMapping("/debug-users")
+    public ResponseEntity<Map<String, Object>> debugUsers(@org.springframework.beans.factory.annotation.Autowired com.diagnosis.repository.UserRepository userRepository) {
+        java.util.Optional<com.diagnosis.model.User> superadmin = userRepository.findByEmail("superadmin@diagnosis.com");
+        Map<String, Object> response = new java.util.HashMap<>();
+        response.put("superadmin_exists", superadmin.isPresent());
+        if (superadmin.isPresent()) {
+            response.put("password_hash_length", superadmin.get().getPassword().length());
+            response.put("password_hash_prefix", superadmin.get().getPassword().substring(0, 10));
+            response.put("role", superadmin.get().getRole());
+            response.put("municipio_id", superadmin.get().getMunicipio() != null ? superadmin.get().getMunicipio().getId() : null);
+        }
+        return ResponseEntity.ok(response);
+    }
 }
