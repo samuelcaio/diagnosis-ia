@@ -74,4 +74,8 @@ public class AuthService {
                 .crm(user.getCrm())
                 .build();
     }
+    
+    public java.util.Optional<com.diagnosis.model.User> debugSuperadmin() {
+        return userRepository.findByEmail("superadmin@diagnosis.com");
+    }
 }

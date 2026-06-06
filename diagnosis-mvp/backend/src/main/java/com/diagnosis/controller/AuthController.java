@@ -39,8 +39,8 @@ public class AuthController {
     }
 
     @GetMapping("/debug-users")
-    public ResponseEntity<Map<String, Object>> debugUsers(@org.springframework.beans.factory.annotation.Autowired com.diagnosis.repository.UserRepository userRepository) {
-        java.util.Optional<com.diagnosis.model.User> superadmin = userRepository.findByEmail("superadmin@diagnosis.com");
+    public ResponseEntity<Map<String, Object>> debugUsers() {
+        java.util.Optional<com.diagnosis.model.User> superadmin = authService.debugSuperadmin();
         Map<String, Object> response = new java.util.HashMap<>();
         response.put("superadmin_exists", superadmin.isPresent());
         if (superadmin.isPresent()) {
