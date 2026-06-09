@@ -39,7 +39,8 @@ public class TriageController {
     @Operation(summary = "Obter fila de espera", description = "Retorna todos os agendamentos que estão aguardando triagem ou atendimento médico.")
     public ResponseEntity<List<Appointment>> getTriageQueue() {
         try {
-            if (true) throw new RuntimeException("Forçando mock para a vitrine.");
+            boolean forceMock = true;
+            if (forceMock) throw new RuntimeException("Forçando mock para a vitrine.");
             return ResponseEntity.ok(triageService.getTriageQueue());
         } catch (Exception e) {
             // Mock vitrine caso o Supabase falhe ou demore

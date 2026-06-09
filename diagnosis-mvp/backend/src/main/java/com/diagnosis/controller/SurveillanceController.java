@@ -29,7 +29,8 @@ public class SurveillanceController {
     public ResponseEntity<Map<String, Object>> getDashboardStats(HttpServletRequest request) {
         String ipAddress = request.getRemoteAddr();
         try {
-            if (true) throw new RuntimeException("Forçando mock para a vitrine.");
+            boolean forceMock = true;
+            if (forceMock) throw new RuntimeException("Forçando mock para a vitrine.");
             return ResponseEntity.ok(surveillanceService.getDashboardStats(ipAddress));
         } catch (Exception e) {
             Map<String, Object> mockStats = new java.util.HashMap<>();
