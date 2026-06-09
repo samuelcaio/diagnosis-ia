@@ -34,6 +34,11 @@ public class AuthService {
                         .email("superadmin@diagnosis.com")
                         .role(com.diagnosis.model.Role.SUPER_ADMIN)
                         .name("Gestor Diagnosis")
+                        .municipio(com.diagnosis.model.Municipio.builder()
+                            .id(java.util.UUID.fromString("11111111-2222-3333-4444-555555555555"))
+                            .nomeSecretaria("Secretaria Municipal")
+                            .corPrimaria("#000000")
+                            .build())
                         .build();
                 UserPrincipal bypassPrincipal = new UserPrincipal(bypassUser);
                 return AuthResponse.builder()
@@ -63,7 +68,7 @@ public class AuthService {
                     .crm(principal.getUser().getCrm())
                     .build();
         } catch (Exception e) {
-            throw new CustomException("Credenciais inválidas. E-mail ou senha incorretos.", HttpStatus.UNAUTHORIZED);
+            throw new CustomException("Credenciais inválidas ou erro interno: " + e.getClass().getName() + " - " + e.getMessage(), HttpStatus.UNAUTHORIZED);
         }
     }
 
