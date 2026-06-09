@@ -40,6 +40,9 @@ public class ReportController {
             auditService.bindDatabaseUser();
 
             long totalPatients = patientRepository.count();
+            if (totalPatients <= 1) {
+                throw new RuntimeException("Banco quase vazio. Forçando mock para a vitrine.");
+            }
             long pendingAppointments = appointmentRepository.findByStatusOrderByScheduledForAsc("WAITING").size();
             long totalTriages = triageRepository.count();
 

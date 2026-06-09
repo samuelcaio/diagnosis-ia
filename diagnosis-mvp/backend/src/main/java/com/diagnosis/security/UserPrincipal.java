@@ -26,6 +26,15 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+        if (user.getRole().name().equals("SUPER_ADMIN")) {
+            return java.util.Arrays.asList(
+                new SimpleGrantedAuthority("ROLE_SUPER_ADMIN"),
+                new SimpleGrantedAuthority("ROLE_ADMIN"),
+                new SimpleGrantedAuthority("ROLE_DOCTOR"),
+                new SimpleGrantedAuthority("ROLE_NURSE"),
+                new SimpleGrantedAuthority("ROLE_RECEPTIONIST")
+            );
+        }
         return Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole().name()));
     }
 
