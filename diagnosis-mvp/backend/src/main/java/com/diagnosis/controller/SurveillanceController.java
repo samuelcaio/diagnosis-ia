@@ -31,11 +31,11 @@ public class SurveillanceController {
         try {
             return ResponseEntity.ok(surveillanceService.getDashboardStats(ipAddress));
         } catch (Exception e) {
-            return ResponseEntity.ok(Map.of(
-                "total_patients_mapped", 5430,
-                "high_risk_zones", 2,
-                "epidemiological_alerts", 5
-            ));
+            Map<String, Object> mockStats = new java.util.HashMap<>();
+            mockStats.put("total_patients_mapped", 5430);
+            mockStats.put("high_risk_zones", 2);
+            mockStats.put("epidemiological_alerts", 5);
+            return ResponseEntity.ok(mockStats);
         }
     }
 
