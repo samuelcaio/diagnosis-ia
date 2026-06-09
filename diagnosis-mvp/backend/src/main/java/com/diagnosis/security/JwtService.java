@@ -110,6 +110,14 @@ public class JwtService {
 
     private Key getSignInKey() {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+        if (keyBytes.length < 32) {
+            byte[] padded = new byte[32];
+            System.arraycopy(keyBytes, 0, padded, 0, keyBytes.length);
+            for (int i = keyBytes.length; i < 32; i++) {
+                padded[i] = (byte) i;
+            }
+            keyBytes = padded;
+        }
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }
