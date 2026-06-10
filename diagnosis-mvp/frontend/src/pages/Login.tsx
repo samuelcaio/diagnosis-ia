@@ -26,18 +26,8 @@ export default function Login() {
     setLoading(true);
 
     try {
-      // 🚨 EMERGENCY BYPASS PARA APRESENTAÇÃO 🚨
-      if (email === 'superadmin@diagnosis.com' && password === 'senha123') {
-        login(
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdXBlcmFkbWluQGRpYWdub3Npcy5jb20iLCJyb2xlIjoiU1VQRVJfQURNSU4iLCJuYW1lIjoiR2VzdG9yIERpYWdub3NpcyIsInVzZXJJZCI6Ijk5OTk5OTk5LTk5OTktOTk5OS05OTk5LTk5OTk5OTk5OTk5OSJ9.fake_signature', 
-          'fake-refresh', 
-          'Gestor Diagnosis', 
-          'superadmin@diagnosis.com', 
-          'SUPER_ADMIN'
-        );
-        navigate('/');
-        return;
-      }
+      // O bypass agora é feito diretamente no backend (AuthService.java)
+      // para garantir que o token gerado tenha uma assinatura válida real.
 
       const response = await fetch('/api/auth/login', {
         method: 'POST',
