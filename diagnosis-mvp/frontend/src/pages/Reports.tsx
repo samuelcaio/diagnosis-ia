@@ -142,15 +142,7 @@ export default function Reports() {
         `}
       </style>
 
-      {/* BOTÃO FLUTUANTE PARA IMPRESSÃO (FOOL-PROOF) */}
-      <button 
-        onClick={handlePrint}
-        className="print:hidden absolute top-0 right-0 z-50 flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl text-lg font-bold shadow-2xl transition-all border-4 border-white"
-        style={{ transform: 'translateY(-20px)' }}
-      >
-        <Printer size={24} />
-        IMPRIMIR PDF
-      </button>
+
 
       {/* CABEÇALHO */}
       <div className="flex flex-col gap-2">
