@@ -40,6 +40,11 @@ export default function Reports() {
       const res = await fetch('/api/reports/dashboard', {
         headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
       });
+      if (res.status === 401 || res.status === 403) {
+        localStorage.removeItem('token');
+        window.location.href = '/';
+        return;
+      }
       if (res.ok) {
         const data = await res.json();
         setStats(data);

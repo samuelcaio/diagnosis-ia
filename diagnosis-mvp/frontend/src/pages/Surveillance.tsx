@@ -39,6 +39,12 @@ export default function Surveillance() {
         fetch('/api/surveillance/alerts', { headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }})
       ]);
       
+      if (statsRes.status === 401 || statsRes.status === 403 || alertsRes.status === 401 || alertsRes.status === 403) {
+        localStorage.removeItem('token');
+        window.location.href = '/';
+        return;
+      }
+      
       if (statsRes.ok) setStats(await statsRes.json());
       if (alertsRes.ok) setAlerts(await alertsRes.json());
     } catch (err) {
