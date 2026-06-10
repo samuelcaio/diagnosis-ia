@@ -276,63 +276,8 @@ export default function PatientTimeline() {
             timelineRecords: data.timelineRecords || [],
             triages: data.triages || []
           });
-          setLoading(false);
-          return;
         }
       }
-      throw new Error("Fallback para mock");
-    } catch (err) {
-      console.error("Usando dados simulados para prontuário", err);
-      // Mock Fallback para MVP
-      setHistory({
-        patient: {
-          id: patientId || 'mock-id-1',
-          name: 'Maria Joana da Silva',
-          birthDate: '1975-06-15',
-          gender: 'FEMININO',
-          cpfHash: '123.***.***-89',
-          address: 'Rua das Flores, 123',
-          phone: '(11) 98765-4321'
-        },
-        conditions: [
-          { name: 'Hipertensão Arterial Essencial', severity: 'MODERADO', status: 'ACTIVE', recordedAt: '2023-01-10T10:00:00Z' },
-          { name: 'Diabetes Mellitus Tipo 2', severity: 'ALTO', status: 'ACTIVE', recordedAt: '2022-05-20T09:30:00Z' }
-        ],
-        observations: [
-          { code: 'GLUCOSE', name: 'Glicemia de Jejum', value: '145', unit: 'mg/dL', referenceRange: '70-99', recordedAt: '2026-06-08T08:00:00Z' },
-          { code: 'BP', name: 'Pressão Arterial', value: '140/90', unit: 'mmHg', referenceRange: '120/80', recordedAt: '2026-06-08T08:05:00Z' }
-        ],
-        medications: [
-          { medicationName: 'Losartana Potássica 50mg', dosage: '1 comp', frequency: '12/12h', status: 'ACTIVE', recordedAt: '2023-01-10T10:15:00Z' },
-          { medicationName: 'Metformina 850mg', dosage: '1 comp', frequency: 'Após almoço e jantar', status: 'ACTIVE', recordedAt: '2022-05-20T09:45:00Z' }
-        ],
-        allergies: [
-          { allergen: 'Dipirona', severity: 'ALTO', reaction: 'Choque Anafilático', recordedAt: '2015-03-12T14:00:00Z' }
-        ],
-        immunizations: [
-          { vaccineName: 'Influenza Quadrivalente', dose: 'Única', appliedAt: '2026-04-15T10:00:00Z' },
-          { vaccineName: 'COVID-19 Bivalente', dose: 'Reforço', appliedAt: '2025-11-20T11:00:00Z' }
-        ],
-        timelineRecords: [
-          { 
-            recordedAt: new Date().toISOString(), 
-            type: 'CONSULTA APS E-SUS', 
-            notes: 'Paciente atendida com queixa de cefaleia intensa e picos hipertensivos. Solicitado ECG e ajuste medicamentoso.',
-            cid: 'I10', ciap2: 'K86'
-          }
-        ],
-        triages: [
-          {
-            bloodPressure: '150/95',
-            heartRate: 88,
-            respiratoryRate: 18,
-            oxygenSaturation: 97,
-            temperature: 36.8,
-            painScale: 6,
-            riskClassification: 'AMARELO'
-          }
-        ]
-      });
       
       const bedsRes = await fetch('/api/beds', {
         headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
@@ -341,6 +286,8 @@ export default function PatientTimeline() {
         const bedsData = await safeParseJson(bedsRes);
         if (bedsData) setBeds(bedsData);
       }
+    } catch (err) {
+      console.error(err);
     } finally {
       setLoading(false);
     }

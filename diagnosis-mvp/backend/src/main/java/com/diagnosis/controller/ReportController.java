@@ -36,76 +36,56 @@ public class ReportController {
     @Transactional(readOnly = true)
     @Operation(summary = "Obter dados estatísticos do dashboard", description = "Retorna os contadores globais de pacientes, atendimentos pendentes, alertas de alto risco identificados e dados para gráficos de produtividade/espera.")
     public ResponseEntity<ReportDashboardResponse> getDashboardData() {
-        try {
-            auditService.bindDatabaseUser();
+        auditService.bindDatabaseUser();
 
-            long totalPatients = patientRepository.count();
-            if (totalPatients <= 1) {
-                throw new RuntimeException("Banco quase vazio. Forçando mock para a vitrine.");
+        long totalPatients = patientRepository.count();
+        long pendingAppointments = appointmentRepository.findByStatusOrderByScheduledForAsc("WAITING").size();
+        long totalTriages = triageRepository.count();
+
+        long highRiskAlerts = 1; // João da Silva no seed
+
+        LocalDateTime startOfDay = LocalDate.now().atStartOfDay();
+        List<Object[]> triageCounts = triageRepository.countTriagesByRiskClassificationSince(startOfDay);
+        
+        Map<String, Integer> avgWaitingTimes = new HashMap<>();
+        avgWaitingTimes.put("VERMELHO", 4);
+        avgWaitingTimes.put("LARANJA", 12);
+        avgWaitingTimes.put("AMARELO", 24);
+        avgWaitingTimes.put("VERDE", 52);
+        avgWaitingTimes.put("AZUL", 85);
+        
+        for (Object[] row : triageCounts) {
+            String risk = (String) row[0];
+            Long count = (Long) row[1];
+            if (avgWaitingTimes.containsKey(risk)) {
+                avgWaitingTimes.put(risk, avgWaitingTimes.get(risk) + (count.intValue() * 2));
             }
-            long pendingAppointments = appointmentRepository.findByStatusOrderByScheduledForAsc("WAITING").size();
-            long totalTriages = triageRepository.count();
-
-            long highRiskAlerts = 1; // João da Silva no seed
-
-            LocalDateTime startOfDay = LocalDate.now().atStartOfDay();
-            List<Object[]> triageCounts = triageRepository.countTriagesByRiskClassificationSince(startOfDay);
-            
-            Map<String, Integer> avgWaitingTimes = new HashMap<>();
-            avgWaitingTimes.put("VERMELHO", 4);
-            avgWaitingTimes.put("LARANJA", 12);
-            avgWaitingTimes.put("AMARELO", 24);
-            avgWaitingTimes.put("VERDE", 52);
-            avgWaitingTimes.put("AZUL", 85);
-            
-            for (Object[] row : triageCounts) {
-                String risk = (String) row[0];
-                Long count = (Long) row[1];
-                if (avgWaitingTimes.containsKey(risk)) {
-                    avgWaitingTimes.put(risk, avgWaitingTimes.get(risk) + (count.intValue() * 2));
-                }
-            }
-
-            List<Object[]> prodCounts = medicalRecordRepository.countProductivityByAuthorSince(startOfDay);
-            Map<String, Integer> doctorProductivity = new HashMap<>();
-            for (Object[] row : prodCounts) {
-                String authorName = (String) row[0];
-                Long count = (Long) row[1];
-                doctorProductivity.put(authorName, count.intValue());
-            }
-            
-            if (doctorProductivity.isEmpty()) {
-                 doctorProductivity = Map.of(
-                    "Nenhum Atendimento (Real)", 0
-                );
-            }
-
-            ReportDashboardResponse response = ReportDashboardResponse.builder()
-                    .totalPatients(totalPatients)
-                    .pendingAppointments(pendingAppointments)
-                    .highRiskAlertsCount(highRiskAlerts)
-                    .totalTriagesToday(totalTriages)
-                    .avgWaitingTimeMinutes(avgWaitingTimes)
-                    .doctorProductivity(doctorProductivity)
-                    .build();
-
-            return ResponseEntity.ok(response);
-        } catch (Exception e) {
-            // Se o banco falhar (timeout, erro de conexão, RLS), retorna dados vitrine instantaneamente
-            Map<String, Integer> mockWaiting = new HashMap<>();
-            mockWaiting.put("VERMELHO", 2); mockWaiting.put("LARANJA", 15);
-            mockWaiting.put("AMARELO", 30); mockWaiting.put("VERDE", 45); mockWaiting.put("AZUL", 90);
-            
-            ReportDashboardResponse mock = ReportDashboardResponse.builder()
-                    .totalPatients(1254)
-                    .pendingAppointments(12)
-                    .highRiskAlertsCount(1)
-                    .totalTriagesToday(48)
-                    .avgWaitingTimeMinutes(mockWaiting)
-                    .doctorProductivity(Map.of("Dr. Carlos", 15, "Enf. Mariana", 33))
-                    .build();
-            return ResponseEntity.ok(mock);
         }
+
+        List<Object[]> prodCounts = medicalRecordRepository.countProductivityByAuthorSince(startOfDay);
+        Map<String, Integer> doctorProductivity = new HashMap<>();
+        for (Object[] row : prodCounts) {
+            String authorName = (String) row[0];
+            Long count = (Long) row[1];
+            doctorProductivity.put(authorName, count.intValue());
+        }
+        
+        if (doctorProductivity.isEmpty()) {
+             doctorProductivity = Map.of(
+                "Nenhum Atendimento (Real)", 0
+            );
+        }
+
+        ReportDashboardResponse response = ReportDashboardResponse.builder()
+                .totalPatients(totalPatients)
+                .pendingAppointments(pendingAppointments)
+                .highRiskAlertsCount(highRiskAlerts)
+                .totalTriagesToday(totalTriages)
+                .avgWaitingTimeMinutes(avgWaitingTimes)
+                .doctorProductivity(doctorProductivity)
+                .build();
+
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping("/waiting-time")
